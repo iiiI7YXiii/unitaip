@@ -1229,7 +1229,7 @@ fieldset {
 .create__preview-card {
   display: flex;
   flex-direction: column;
-  background: url("../../images/create/card-bg.jpg ") no-repeat center;
+  background: url("../images/create/card-bg.jpg ") no-repeat center;
   background-size: cover;
   border-radius: 17px;
   min-height: 214px;
@@ -2799,7 +2799,7 @@ fieldset {
   width: 28px;
   height: 28px;
   border-radius: 10px;
-  background: url("../../images/create/card-bg.jpg ") no-repeat center;
+  background: url("../images/create/card-bg.jpg ") no-repeat center;
   background-size: cover;
   transform: translateY(-50%);
 }
@@ -2812,7 +2812,7 @@ fieldset {
   }
 }
 .radio-bg:nth-child(2) .radio-bg__label::before {
-  background: url("../../images/create/abstraction-mini.jpg ") no-repeat center;
+  background: url("../images/create/abstraction-mini.jpg ") no-repeat center;
 }
 .radio-bg:nth-child(3) .radio-bg__label::before {
   background: #09AE84;
