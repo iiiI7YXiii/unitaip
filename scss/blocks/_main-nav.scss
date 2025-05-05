@@ -1,0 +1,25 @@
+.main-nav {
+  align-items: center;
+  display: flex;
+
+  @include vp-1023 {
+    display: none;
+  }
+
+
+  &__list {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+}

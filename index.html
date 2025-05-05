@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Главная страница&nbsp;&mdash; UniTap</title>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a class="header__logo-link" href="#" aria-label="Перейти на главную страницу">
+          <svg class="header__logo-icon" width="107" height="36" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Продукты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Для бизнеса</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Блог</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__right">
+          <button class="header__burger" type="button" aria-label="Открыть бургерное меню">
+            <svg class="header__burger-icon" width="18" height="12" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-burger"></use>
+            </svg>
+            <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <button class="header__search" type="button" aria-label="Найти">
+            <svg class="header__search-icon" width="18" height="18" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+          <button class="header__lang" type="button" aria-label="Выбрать язык">
+            Ru
+            <svg class="header__lang-icon" width="9" height="6" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+          <button class="header__activate" type="button">
+            Подключить
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1 class="hero__title">Цифровые визитки для ваших задач</h1>
+      <p class="hero__description">
+        Digital визитки - будущее для цифрового бизнеса и ваших идей
+      </p>
+      <div class="hero__img-wrapper">
+        <picture>
+          <source media="(max-width: 639px)" srcset="
+                images/hero/hero-mobile.png
+              " />
+          <source media="(max-width: 1023px)" srcset="
+                images/hero/hero-tablet.png
+              " />
+          <source media="(max-width: 1439px)" srcset="
+                images/hero/hero-middle.png
+              " />
+          <img class="hero__image" src="images/hero/hero.png" alt="Приложение на телефоне" />
+        </picture>
+      </div>
+    </section>
+    <section class="find-more">
+      <div class="container">
+        <h2 class="find-more__title">
+          Узнайте больше об электронных визитках
+        </h2>
+        <p class="find-more__description">
+          Виртуальный офис для вас и вашей компании, точная статистика,
+          редактор для визиток
+        </p>
+        <ul class="find-more__list">
+          <li class="find-more__item">
+            <div class="find-more__item-img">
+              <picture>
+                <source media="(max-width: 639px)" srcset="images/find-more/find-more1-mobile.png" />
+                <source media="(max-width: 1023px)" srcset="images/find-more/find-more1-tablet.png" />
+                <img class="find-more__image" src="images/find-more/find-more1.png"
+                  alt="Приложение на телефоне" />
+              </picture>
+            </div>
+            <span class="find-more__item-text">Создавайте визитки и делитесь ими</span>
+          </li>
+          <li class="find-more__item">
+            <div class="find-more__item-img">
+              <picture>
+                <source media="(max-width: 639px)" srcset="images/find-more/find-more2-mobile.png" />
+                <source media="(max-width: 1023px)" srcset="images/find-more/find-more2-tablet.png" />
+                <img class="find-more__image" src="images/find-more/find-more2.png"
+                  alt="Приложение на телефоне" />
+              </picture>
+            </div>
+            <span class="find-more__item-text">Создавайте свои уникальные NFC метки</span>
+          </li>
+          <li class="find-more__item">
+            <div class="find-more__item-img">
+              <picture>
+                <source media="(max-width: 639px)" srcset="images/find-more/find-more3-mobile.png" />
+                <source media="(max-width: 1023px)" srcset="images/find-more/find-more3-tablet.png" />
+                <img class="find-more__image" src="images/find-more/find-more3.png"
+                  alt="Приложение на телефоне" />
+              </picture>
+            </div>
+            <span class="find-more__item-text">Работайте в команде</span>
+          </li>
+          <li class="find-more__item">
+            <div class="find-more__item-img">
+              <picture>
+                <source media="(max-width: 639px)" srcset="images/find-more/find-more4-mobile.png" />
+                <source media="(max-width: 1023px)" srcset="images/find-more/find-more4-tablet.png" />
+                <img class="find-more__image" src="images/find-more/find-more4.png"
+                  alt="Приложение на телефоне" />
+              </picture>
+            </div>
+            <span class="find-more__item-text">Подключайте NFC метки к визиткам</span>
+          </li>
+          <li class="find-more__item">
+            <div class="find-more__item-img">
+              <picture>
+                <source media="(max-width: 639px)" srcset="images/find-more/find-more5-mobile.png" />
+                <source media="(max-width: 1023px)" srcset="images/find-more/find-more5-tablet.png" />
+                <img class="find-more__image" src="images/find-more/find-more5.png"
+                  alt="Приложение на телефоне" />
+              </picture>
+            </div>
+            <span class="find-more__item-text">Получайте достижения и приятные бонусы</span>
+          </li>
+          <li class="find-more__item">
+            <div class="find-more__item-img">
+              <picture>
+                <source media="(max-width: 639px)" srcset="images/find-more/find-more6-mobile.png" />
+                <source media="(max-width: 1023px)" srcset="images/find-more/find-more6-tablet.png" />
+                <img class="find-more__image" src="images/find-more/find-more6.png"
+                  alt="Приложение на телефоне" />
+              </picture>
+            </div>
+            <span class="find-more__item-text">Улучшайте визитку с помощью статистики</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="technologies">
+      <div class="container">
+        <h2 class="technologies__title">
+          Новые технологии для удобной и простой работы с бизнесом
+        </h2>
+        <p class="technologies__description">
+          Виртуальный офис для вашей компании: корпоративная почта, календарь,
+          облачное хранилище, редактор документов и сервисы для коммуникации
+        </p>
+        <ul class="technologies__list">
+          <li class="technologies__item">
+            <svg class="technologies__item-icon" width="60" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-user"></use>
+            </svg>
+            <h3 class="technologies__item-title">Личная визитка</h3>
+            <p class="technologies__item-description">
+              Современное и удобное решение для обмена контактной информацией
+            </p>
+          </li>
+          <li class="technologies__item">
+            <svg class="technologies__item-icon" width="60" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-paw"></use>
+            </svg>
+            <h3 class="technologies__item-title">
+              Электронный ошейник для питомца
+            </h3>
+            <p class="technologies__item-description">
+              Лучшее решение для быстрой идентификации и возврата
+              потерявшегося животного
+            </p>
+          </li>
+          <li class="technologies__item">
+            <svg class="technologies__item-icon" width="60" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-hearts"></use>
+            </svg>
+            <h3 class="technologies__item-title">Цифровые открытки</h3>
+            <p class="technologies__item-description">
+              Инновационный способ отправлять поздравления, добавляя
+              интерактивные элементы и мультимедиа.
+            </p>
+          </li>
+          <li class="technologies__item">
+            <svg class="technologies__item-icon" width="60" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-menu"></use>
+            </svg>
+            <div class="technologies__item-badge">
+              <svg class="technologies__item-badge-icon" width="17" height="15" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-union"></use>
+              </svg>
+              <span class="technologies__item-badge-text">БИЗНЕС</span>
+            </div>
+            <h3 class="technologies__item-title">
+              Электронное меню для ресторанов и кафе
+            </h3>
+            <p class="technologies__item-description">
+              Удобное решение для ресторанов и кафе, позволяющее посетителям
+              просматривать меню и делать заказы с помощью NFC и QR-кодов.
+            </p>
+          </li>
+          <li class="technologies__item">
+            <svg class="technologies__item-icon" width="60" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-placard"></use>
+            </svg>
+            <div class="technologies__item-badge">
+              <svg class="technologies__item-badge-icon" width="17" height="15" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-union"></use>
+              </svg>
+              <span class="technologies__item-badge-text">БИЗНЕС</span>
+            </div>
+            <h3 class="technologies__item-title">Афиши кино и театров</h3>
+            <p class="technologies__item-description">
+              Интерактивное решение для представления информации о
+              мероприятиях, обеспечивающее мгновенный доступ и удобство
+              взаимодействия.
+            </p>
+          </li>
+          <li class="technologies__item">
+            <svg class="technologies__item-icon" width="60" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-case"></use>
+            </svg>
+            <div class="technologies__item-badge">
+              <svg class="technologies__item-badge-icon" width="17" height="15" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-union"></use>
+              </svg>
+              <span class="technologies__item-badge-text">БИЗНЕС</span>
+            </div>
+            <h3 class="technologies__item-title">Для компаний</h3>
+            <p class="technologies__item-description">
+              Эффективно передавайте данные о компании, её услугах и
+              сотрудниках с помощью NFC и QR-кодов.
+            </p>
+          </li>
+          <li class="technologies__item">
+            <svg class="technologies__item-icon" width="60" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-label"></use>
+            </svg>
+            <h3 class="technologies__item-title">Стикер для оплаты</h3>
+            <p class="technologies__item-description">
+              Просто приложите смартфон к стикеру или отсканируйте QR-код для
+              моментальной оплаты.
+            </p>
+          </li>
+          <li class="technologies__item">
+            <svg class="technologies__item-icon" width="60" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-bag"></use>
+            </svg>
+            <div class="technologies__item-badge">
+              <svg class="technologies__item-badge-icon" width="17" height="15" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-union"></use>
+              </svg>
+              <span class="technologies__item-badge-text">БИЗНЕС</span>
+            </div>
+            <h3 class="technologies__item-title">Магазин-визитка</h3>
+            <p class="technologies__item-description">
+              Демонстрируйте товары и услуги компании, обновляйте информацию в
+              реальном времени
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="plus">
+      <div class="container">
+        <div class="plus__block">
+          <!-- <img class="plus__image" src="images/plus/plus.png" srcset="images/plus/plus@2x.png 2x" width="300"
+            height="230" alt="карты с плюсом" /> -->
+          <div class="plus__block-left-container">
+            <picture>
+              <source media="(max-width: 639px)" srcset="images/plus/plus-mobile.png" />
+              <source media="(max-width: 1023px)" srcset="images/plus/plus-tablet.png" />
+            <img class="plus__image" src="images/plus/plus.png" alt="карты с плюсом" />
+            </picture>
+            <p class="plus__title">С Плюсом вы будете всегда в плюсе</p>
+            <p class="plus__description">
+              Приобретайте подписку Плюс и улучшайте свою визитку еще лучше
+            </p>
+          </div>
+          <div class="plus__right-container">
+            <div class="plus__advantage">
+              <img class="plus__advantage-icon" src="images/plus/plus-analitic.png" width="33" height="31"
+                alt="аналитика" />
+              <span class="plus__advantage-text">Расширенная аналитика ваших электронных визиток</span>
+            </div>
+            <div class="plus__advantage">
+              <img class="plus__advantage-icon" src="images/plus/plus-castom.png" width="30" height="35"
+                alt="кастомизация" />
+              <span class="plus__advantage-text">Дополнительные возможности кастомизаций ваших электронных
+                визиток</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="create">
+      <div class="container">
+        <h2 class="create__title">
+          Создавайте уникальные визитки, которые будут только у вас
+        </h2>
+        <p class="create__description">
+          Выбирайте дизайн из большой библиотеки или создавайте сами
+        </p>
+        <form class="create__form" action="#" method="post">
+          <div class="create__form-left">
+            <div class="create__preview">
+              <div class="create__preview-card">
+                <svg class="create__preview-card-icon" width="50" height="33" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-for-card"></use>
+                </svg>
+                <span class="create__preview-card-title">Как к вам обращаться</span>
+                <span class="create__preview-card-description">Небольшое описание</span>
+              </div>
+            </div>
+            <fieldset class="create__choice-bg">
+              <div class="radio-bg">
+                <input class="radio-bg__input visually-hidden" id="hit" type="radio" name="bg" />
+                <label class="radio-bg__label" for="hit">Хит сезона</label>
+                <svg class="radio-bg__icon" width="12" height="9" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+              <div class="radio-bg">
+                <input class="radio-bg__input visually-hidden" id="abstraction" type="radio" name="bg" />
+                <label class="radio-bg__label" for="abstraction">Абстракция</label>
+                <svg class="radio-bg__icon" width="12" height="9" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+              <div class="radio-bg">
+                <input class="radio-bg__input visually-hidden" id="colors" type="radio" name="bg" />
+                <label class="radio-bg__label" for="colors">Цвета</label>
+                <svg class="radio-bg__icon" width="12" height="9" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+              <div class="radio-bg">
+                <input class="radio-bg__input visually-hidden" id="gradient" type="radio" name="bg" />
+                <label class="radio-bg__label" for="gradient">Градиент</label>
+                <svg class="radio-bg__icon" width="12" height="9" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+              <div class="radio-bg">
+                <input class="radio-bg__input visually-hidden" id="mine" type="radio" name="bg" />
+                <label class="radio-bg__label" for="mine">Свой дизайн</label>
+                <svg class="radio-bg__icon" width="12" height="9" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+            </fieldset>
+          </div>
+          <div class="create__form-right">
+            <p class="create__form-title">Посмотрите как это выглядит</p>
+            <p class="create__form-description">
+              Выбирайте дизайн из библиотеки или создавайте свой
+            </p>
+            <div class="custom-input">
+              <input class="custom-input__field" type="text" name="name" id="name" placeholder="Как к вам обращаться" />
+            </div>
+            <div class="custom-input">
+              <input class="custom-input__field" type="text" name="description" id="description"
+                placeholder="Небольшое описание" />
+            </div>
+
+            <div class="create__choice-image">
+              <ul class="create__list">
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <!-- <button class="create__list-btn" type="button">
+                  <svg class="plus__advantage-icon" width="9" height="15" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button> -->
+              </ul>
+            </div>
+
+            <div class="create__price-container">
+              <p class="create__price-title">Такая визитка обойдется всего</p>
+              <div class="create__price-right">
+                <span class="create__price">1 255₽</span>
+                <div class="create__badge">
+                  <svg width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-plus"></use>
+                  </svg>
+                  <span class="create__badge-text">ПЛЮС В ПОДАРОК</span>
+                </div>
+                <span class="create__politic">Расчёт носит информационный характер и не является
+                  публичной офертой</span>
+                <button class="create__form-btn" type="submit">
+                  Заказать
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="tariff">
+      <div class="container">
+        <h2 class="tariff__title">
+          Тарифы для обеспечения наибольшего прироста
+        </h2>
+        <p class="tariff__description">
+          Виртуальный офис для вашей компании: корпоративная почта, календарь,
+          облачное хранилище, редактор документов и сервисы для коммуникации
+        </p>
+
+        <ul class="tariff__list">
+          <li class="tariff__item">
+            <div class="tariff__plan free-plan">
+              <p class="tariff__plan-sup-title">
+                Индивидуально для вас и вашего бизнеса
+              </p>
+              <h3 class="tariff__plan-title">UniTap</h3>
+              <ul class="tariff__plan-list">
+                <li class="tariff__plan-item">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Электронная WEB-визитка</span>
+                  <br />
+                  <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Мобильное приложение UniTap</span>
+                  <br />
+                  <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Защищенное хранение ваших данных по стандарту
+                    152-ФЗ.</span>
+                  <br />
+                  <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Данные и хранилище <br /></span>
+                  <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Данные и хранилище </span><br />
+                  <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Данные и хранилище </span><br />
+                  <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">
+                    Данные и хранилище </span><br /><span class="tariff__plan-item-sub">Отключение всех
+                    уведомлений</span>
+                </li>
+                <li class="tariff__plan-item">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Данные и хранилище </span><br />
+                  <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+              </ul>
+              <p class="tariff__plan-price">Бесплатно</p>
+              <p class="tariff__plan-price-text">Для всех и всегда</p>
+              <a href="#" class="tariff__plan-link">Хочу попробовать</a>
+            </div>
+          </li>
+          <li class="tariff__item">
+            <div class="tariff__plan tariff__plan--plus">
+              <p class="tariff__plan-sup-title">
+                Расширенный функционал для вас и вашего бизнеса
+              </p>
+              <h3 class="tariff__plan-title">UniTap Плюс</h3>
+              <ul class="tariff__plan-list">
+                <li class="tariff__plan-item">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Все преимущества прошлого тарифа
+                  </span>
+                  <br /><span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--plus">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">NFC-карта </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--plus">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Дополнительная лицензия администратора на корпоративный
+                    кабинет, в год </span><br /><span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--plus">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Список контактов и выгрузка в CRM </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--plus">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Аналитика в мобильном приложении </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--plus">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Выбор цветовой схемы визиток </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--plus">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Индивидуальный домен </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--plus">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Визитки без встроенной рекламы </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--plus">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--plus">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--plus">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+              </ul>
+              <p class="tariff__plan-price">129₽</p>
+              <p class="tariff__plan-price-text">в месяц за пользователя</p>
+              <div class="tariff__plan-discount">
+                <div class="tariff__plan-discount-percent">-42%</div>
+                <span class="tariff__plan-discount-text">Успей до 23 июля<br />
+                  <span class="tariff__plan-discount-sub-text">899₽ вместо <span>1548₽</span> в год</span>
+                </span>
+              </div>
+              <a href="#" class="tariff__plan-link">Хочу быть в Плюсе</a>
+            </div>
+          </li>
+          <li class="tariff__item">
+            <div class="tariff__plan tariff__plan--business">
+              <p class="tariff__plan-sup-title">
+                Продвинутый функционал для вашего бизнеса
+              </p>
+              <h3 class="tariff__plan-title">UniTap Бизнес</h3>
+              <ul class="tariff__plan-list">
+                <li class="tariff__plan-item">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Все преимущества прошлых тарифов </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--business">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Корпоративные функции </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--business">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Дополнительная лицензия администратора на корпоративный
+                    кабинет </span><br /><span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--business">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Авторский дизайн из каталога </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--business">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Персональный менеджер </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--business">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Приоритетный доступ к новым функциям и бета-версиям
+                    продуктов </span><br /><span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--business">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Возможность кастомизации и брендинг </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--business">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Корпоративные скидки на дополнительные услуги </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--business">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Без рекламы </span><br /><span
+                    class="tariff__plan-item-sub">Визитки без встроенной рекламы.</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--business">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+                <li class="tariff__plan-item tariff__plan-item--business">
+                  <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-check"></use>
+                  </svg>
+                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                </li>
+              </ul>
+              <p class="tariff__plan-price">11 999₽</p>
+              <p class="tariff__plan-price-text">
+                За штат до 50 сотрудников + за каждого сотрудника 699₽
+              </p>
+              <p class="tariff__plan-price">59 999₽</p>
+              <p class="tariff__plan-price-text">
+                За штат свыше 50 сотрудников + за каждого сотрудника 899₽
+              </p>
+              <div class="tariff__plan-discount">
+                <div class="tariff__plan-discount-percent">-35%</div>
+                <span class="tariff__plan-discount-text">Успей до 15 июля<br />
+                  <span class="tariff__plan-discount-sub-text">Вместо <span>15555₽</span> в месяц</span>
+                </span>
+              </div>
+              <a href="#" class="tariff__plan-link">Хочу быть в Бизнесе</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="question-app">
+      <div class="container">
+        <div class="question-app__block">
+          <div class="question-app__block-container">
+            <p class="question-app__block-title">
+              Вы еще не пользуетесь мобильным приложением?
+            </p>
+            <p class="question-app__block-description">
+              Приобретайте подписку Плюс и улучшайте свою визитку еще лучше
+            </p>
+            <a href="#" class="question-app__block-link">Скачать</a>
+          </div>
+          <picture>
+            <source media="(max-width: 639px)" srcset="images/question-app/question-app-mobile.png" />
+            <source media="(max-width: 1023px)" srcset="images/question-app/question-app-tablet.png" />
+            <img class="question-app__image" src="images/question-app/question-app.png" 
+              alt="визитка с забавной картинкой" />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="application">
+      <div class="container">
+        <h2 class="application__title">
+          Почему стоит использовать приложение?
+        </h2>
+        <p class="application__subtitle">
+          Приобретайте подписку Плюс и улучшайте свою визитку еще лучше
+        </p>
+
+        <ul class="application__list">
+          <li class="application__item">
+            <div class="application__item-text-content">
+              <h3 class="application__item-title">Просто работать</h3>
+              <p class="application__item-description">
+                Создавайте, кастомизируйте и делитесь визитками в удобном виде
+              </p>
+            </div>
+            <div class="application__item-image-container">
+              <picture>
+                <source media="(max-width: 639px)" srcset="images/application/application1-mobile.png" />
+                <source media="(max-width: 1023px)" srcset="images/application/application1-tablet.png" />
+                <img class="application__item-image" alt="Easy to Use" src="images/application/application1.png" />
+              </picture>
+            </div>
+          </li>
+
+          <li class="application__item">
+            <div class="application__item-text-content">
+              <h3 class="application__item-title">Удобная статистика</h3>
+              <p class="application__item-description">
+                Огромные данные собраны в мобильном приложении
+              </p>
+            </div>
+            <div class="application__item-image-container">
+              <picture>
+                <source media="(max-width: 639px)" srcset="images/application/application2-mobile.png" />
+                <source media="(max-width: 1023px)" srcset="images/application/application2-tablet.png" />
+                <img class="application__item-image" alt="Statistics" src="images/application/application2.png" />
+              </picture>
+            </div>
+          </li>
+
+          <li class="application__item">
+            <div class="application__item-text-content">
+              <h3 class="application__item-title">Собирайте контакты</h3>
+              <p class="application__item-description">
+                Считывайте другие электронные визитки
+              </p>
+            </div>
+            <div class="application__item-image-container">
+              <picture>
+                <source media="(max-width: 639px)" srcset="images/application/application3-mobile.png" />
+                <source media="(max-width: 1023px)" srcset="images/application/application3-tablet.png" />
+                <img class="application__item-image" alt="Collect Contacts" src="images/application/application3.png" />
+              </picture>
+            </div>
+          </li>
+
+          <li class="application__item">
+            <div class="application__item-text-content">
+              <h3 class="application__item-title">Меняйте данные на ходу</h3>
+              <p class="application__item-description">
+                Надоела обложка - поменяйте ей дизайн простыми действиями
+              </p>
+            </div>
+            <div class="application__item-image-container">
+              <picture>
+                <source media="(max-width: 639px)" srcset="images/application/application4-mobile.png" />
+                <source media="(max-width: 1023px)" srcset="images/application/application4-tablet.png" />
+                <img class="application__item-image" alt="Change Data" src="images/application/application4.png" />
+              </picture>
+            </div>
+          </li>
+        </ul>
+
+        <div class="application__download">
+          <div class="application__download-content">
+            <svg class="application__download-logo" width="108" height="108" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-green-logo"></use>
+            </svg>
+            <h3 class="application__download-title">
+              Попробуйте приложение прямо сейчас
+            </h3>
+            <div class="application__download-links">
+              <a href="#" class="application__download-link">
+                <img class="application__download-icon" src="images/application/app-store.png" alt="App Store" />
+              </a>
+              <a href="#" class="application__download-link">
+                <img class="application__download-icon" src="images/application/google-play.png" alt="Google Play" />
+              </a>
+              <a href="#" class="application__download-link">
+                <img class="application__download-icon" src="images/application/app-gallery.png" alt="App Gallery" />
+              </a>
+              <a href="#" class="application__download-link">
+                <img class="application__download-icon" src="images/application/ru-store.png" alt="Ru Store" />
+              </a>
+            </div>
+          </div>
+          <picture>
+            <source media="(max-width: 639px)" srcset="images/application/application5-mobile.png" />
+            <source media="(max-width: 1023px)" srcset="images/application/application5-tablet.png" />
+          <img class="application__download-image" src="images/application/application5.png"
+            alt="пирложение на телефоне" />
+            </picture>
+        </div>
+      </div>
+    </section>
+    <section class="business">
+      <div class="container">
+        <div class="business__block">
+          <div class="business__block-container">
+            <p class="business__block-title">
+              Развивайте бизнес вместе с нами
+            </p>
+            <p class="business__block-description">
+              Приобретайте подписку Плюс и улучшайте свою визитку еще лучше
+            </p>
+            <button class="business__block-link">Подробнее</button>
+          </div>
+          <img class="business__block-image" src="images/business/coins.png" alt="Business" />
+        </div>
+
+        <ul class="business__list">
+          <li class="business__item">
+            <img class="business__item-image" src="images/business/navigate.png" alt="Неограниченные возможности"/>
+            <h3 class="business__item-title">Неограниченные возможности</h3>
+            <p class="business__item-description">
+              Создавайте и управляйте неограниченным количеством электронных
+              визиток с доступом ко всем шаблонам и функциям
+            </p>
+          </li>
+          <li class="business__item">
+            <img class="business__item-image" src="images/business/basket.png" alt="Полная интеграция и аналитика" />
+            <h3 class="business__item-title">
+              Полная интеграция и аналитика
+            </h3>
+            <p class="business__item-description">
+              Интеграция с CRM-системами, продвинутые функции для анализа
+              данных и генерация отчетов для повышения эффективности
+              бизнес-процессов
+            </p>
+          </li>
+          <li class="business__item">
+            <img class="business__item-image" src="images/business/sapphire.png" alt="Персонализированная поддержка"/>
+            <h3 class="business__item-title">
+              Персонализированная поддержка
+            </h3>
+            <p class="business__item-description">
+              Персональная поддержка и консультации, обучение сотрудников и
+              приоритетный доступ к новым функциям и обновлениям
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="consultation">
+      <h2 class="visually-hidden">Бесплатная консультация</h2>
+      <div class="container">
+        <div class="consultation__block">
+          <div class="consultation__block-text">
+            <p class="consultation__block-title">
+              Запишитесь на бесплатную консультацию с менеджером
+            </p>
+            <p class="consultation__block-description">
+              Выбирайте дизайн из большой библиотеки или создавайте
+              самиПриобретайте подписку Плюс и улучшайте свою визитку еще
+              лучше
+            </p>
+          </div>
+          <form class="consultation__block-form" action="#" method="post">
+            <div class="custom-input">
+              <input class="custom-input__field" type="text" name="consultation-name" id="consultation-name"
+                placeholder="Как к вам обращаться" />
+            </div>
+            <div class="custom-input">
+              <input class="custom-input__field" type="text" name="consultation-description"
+                id="consultation-description" placeholder="Небольшое описание" />
+            </div>
+            <div class="custom-input">
+              <input class="custom-input__field" type="email" name="consultation-email" id="consultation-email"
+                placeholder="E-mail" />
+            </div>
+            <button class="consultation__block-form-btn" type="submit">
+              Получить консультацию
+            </button>
+            <p class="consultation__block-form-politic">
+              Отправляя заявку, вы даете согласие на обработку своих
+              персональных данных в соответствии с положением о
+              конфиденциальности
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <h2 class="faq__title">Остались вопросы?</h2>
+        <p class="faq__description">
+          Здесь мы собрали несколько популярных вопросов и ответы на них
+        </p>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <div class="faq__item-question">
+              <span class="faq__item-question-text" aria-expanded="false">Что такое UniTap Бизнес?</span>
+              <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="faq__item-answer" aria-hidden="true">
+              <p class="faq__item-answer-text">
+                Здесь мы собрали несколько популярных вопросов и ответы на
+                них. NFC визитки для ваших задач. Лучшее цифровое решение для
+                вас и вашего бизнесаЗдесь мы собрали несколько популярных
+                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
+                цифровое решение для вас и вашего бизнеса.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-question">
+              <p class="faq__item-question-text">
+                Как начать пользоваться UniTap для бизнеса?
+              </p>
+              <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="faq__item-answer" aria-hidden="true">
+              <p class="faq__item-answer-text">
+                Здесь мы собрали несколько популярных вопросов и ответы на
+                них. NFC визитки для ваших задач. Лучшее цифровое решение для
+                вас и вашего бизнесаЗдесь мы собрали несколько популярных
+                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
+                цифровое решение для вас и вашего бизнеса.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-question">
+              <p class="faq__item-question-text">
+                Сколько стоит годовая подписка на UniTap Плюс?
+              </p>
+              <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="faq__item-answer" aria-hidden="true">
+              <p class="faq__item-answer-text">
+                Здесь мы собрали несколько популярных вопросов и ответы на
+                них. NFC визитки для ваших задач. Лучшее цифровое решение для
+                вас и вашего бизнесаЗдесь мы собрали несколько популярных
+                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
+                цифровое решение для вас и вашего бизнеса.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-question">
+              <p class="faq__item-question-text">
+                Как оплачивать UniTap для бизнеса?
+              </p>
+              <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="faq__item-answer" aria-hidden="true">
+              <p class="faq__item-answer-text">
+                Здесь мы собрали несколько популярных вопросов и ответы на
+                них. NFC визитки для ваших задач. Лучшее цифровое решение для
+                вас и вашего бизнесаЗдесь мы собрали несколько популярных
+                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
+                цифровое решение для вас и вашего бизнеса.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-question">
+              <p class="faq__item-question-text">
+                Как переехать в UniTap с другой платформы?
+              </p>
+              <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="faq__item-answer" aria-hidden="true">
+              <p class="faq__item-answer-text">
+                Здесь мы собрали несколько популярных вопросов и ответы на
+                них. NFC визитки для ваших задач. Лучшее цифровое решение для
+                вас и вашего бизнесаЗдесь мы собрали несколько популярных
+                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
+                цифровое решение для вас и вашего бизнеса.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-question">
+              <p class="faq__item-question-text">
+                Как подключить UniTap для бизнеса через партнёра?
+              </p>
+              <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="faq__item-answer" aria-hidden="true">
+              <p class="faq__item-answer-text">
+                Здесь мы собрали несколько популярных вопросов и ответы на
+                них. NFC визитки для ваших задач. Лучшее цифровое решение для
+                вас и вашего бизнесаЗдесь мы собрали несколько популярных
+                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
+                цифровое решение для вас и вашего бизнеса.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__subscription">
+          <div class="footer__subscription-top">
+            <svg class="footer__logo-icon" width="106" height="35" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#logo"></use>
+            </svg>
+            <ul class="footer__subscription-list">
+              <li class="footer__subscription-item">
+                <div class="footer__subscription-item-badge-plus">
+                  <svg class="footer__plus-icon" width="12" height="12" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-plus"></use>
+                  </svg>
+                </div>
+                <span class="footer__subscription-item-text">UniTap Плюс</span>
+              </li>
+              <li class="footer__subscription-item">
+                <div class="footer__subscription-item-badge-business">
+                  <svg width="12" height="12" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-union"></use>
+                  </svg>
+                </div>
+                <span class="footer__subscription-item-text">UniTap Бизнес</span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__social-links">
+            <p class="footer__social-title">Подписывайтесь на наши каналы</p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg class="footer__social-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tg"></use>
+                  </svg>
+                  <span class="footer__social-text">Телеграм</span>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg class="footer__social-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-vk"></use>
+                  </svg>
+                  <span class="footer__social-text">ВКонтакте</span>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg class="footer__social-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-dzen"></use>
+                  </svg>
+                  <span class="footer__social-text">Дзен</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__navigation">
+          <div class="footer__column">
+            <h4 class="footer__column-title">Поддержка</h4>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Вопросы и ответы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Правила сайта</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Справка</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Активация по коду</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__column-title">Приобретение</h4>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Доставка и оплата</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Где купить</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Подарки партнерам</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__column-title">Дополнительно</h4>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Разработчикам</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Пользовательское соглашение</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__column-title">Поддержка</h4>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Вопросы и ответы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Правила сайта</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Справка</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Активация по коду</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__column-title">Приобретение</h4>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Доставка и оплата</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Где купить</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Подарки партнерам</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__middle">
+        <div class="footer__contact-info">
+          <a class="footer__phone" href="tel:+7(999)999-99-99">8 (999) 999-99-99</a>
+          <p class="footer__address">
+            г. Казань, ул. Пушкина, д. Колотушкина, этаж 1, ком. Б2, офис 6,
+            ИНН 9999999999, КПП 999999999, ОГРН 999999999, 0+
+          </p>
+        </div>
+        <div class="footer__company-info">
+          <p class="footer__company-info-text">
+            UniTap - инновационная платформа г. Казань, ул. Пушкина, д.
+            Колотушкина, этаж 1, ком. Б2, офис 6, ИНН 9999999999, КПП
+            999999999, ОГРН 999999999, 0+
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__feedback">Обратная связь</a>
+        <a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
+        <p class="footer__copyright">© 2023–2024, UniTap</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

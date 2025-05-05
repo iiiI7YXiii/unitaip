@@ -1,0 +1,122 @@
+.question-app {
+    padding: 50px 0 25px;
+
+    @include vp-1023 {
+        padding: 40px 0 15px;
+    }
+
+    @include vp-639 {
+        padding: 60px 0 15px;
+ 
+    }
+
+    &__block {
+        display: flex;
+        gap: 20px;
+        background-color: $color-bg2;
+        padding: 60px 60px 60px 90px;
+        border-radius: 60px;
+        align-items: center;
+        min-height: 480px;
+        justify-content: space-between;
+        // position: relative;
+
+        @include vp-1439 {
+            padding: 36px;
+        }
+
+        @include vp-1023 {
+            padding: 28px 22px;
+            min-height: 294px;
+        }
+
+        @include vp-639 {
+            min-height: 527px;
+            flex-direction: column-reverse;
+            padding: 0;
+            gap: 0;
+        }
+
+        &-container {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            @include vp-1023 {
+                gap: 15px;
+                width: 55%;
+            }
+
+            @include vp-639 {
+                width: 100%;
+                align-items: center;
+                padding: 0 20px 47px;
+            }
+        }
+    
+        &-image {
+            height: 100%;
+            width: 100%;
+        }
+    
+        &-title {
+            font-size: 50px;
+            line-height: 55px;
+            font-weight: 700;
+            margin: 0;
+
+            @include vp-1439 {
+                font-size: 35px;
+            line-height: 42px;
+            }
+
+            @include vp-1023 {
+                font-size: 20px;
+            line-height: 25px;
+            }
+
+            @include vp-639 {
+                text-align: center
+            }
+        }
+    
+        &-description {
+            font-size: 22px;
+            line-height: 26px;
+            margin: 0;
+            max-width: 580px;
+
+            @include vp-1023 {
+                font-size: 16px;
+            line-height: 19px;
+            }
+
+            @include vp-639 {
+                text-align: center
+            }
+        }
+    
+        &-link {
+            width: 238px;
+            display: flex;
+            justify-content: center;
+            border-radius: 16px;
+            padding: 20px;
+            font-size: 18px;
+            line-height: 17px;
+            font-weight: 500;
+            background:linear-gradient(214.48deg, #333333 -2.66%, #464646 53.33%, #262626 107.12%);
+            color: $color-bg1;
+
+            @include vp-1023 {
+                width: 145px;
+                border-radius: 10px;
+                padding: 12px;
+                font-size: 11px;
+                line-height: 10px;
+            }
+        }
+    }
+
+}

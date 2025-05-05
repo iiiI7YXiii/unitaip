@@ -1,0 +1,76 @@
+.radio-bg {
+    display: flex;
+    align-items: center;
+    background-color: $color-text1-04;
+    border-radius: 13px;
+    padding: 10px 10px 10px 43px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    position: relative;
+    flex-wrap: nowrap;
+
+    @include vp-639 {
+        border-radius: 10px;
+        padding: 8px 7px 8px 35px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__label {
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            width: 28px;
+            height: 28px;
+            border-radius: 10px;
+            background: url('../../images/create/card-bg.jpg ') no-repeat center;
+            background-size: cover;
+            transform: translateY(-50%);
+
+            @include vp-639 {
+                width: 23px;
+                height: 23px;
+                border-radius: 8px;
+                left: 7px;
+            }
+        }
+    }
+
+    &:nth-child(2) .radio-bg__label::before {
+        background: url('../../images/create/abstraction-mini.jpg ') no-repeat center;;
+    }
+
+    &:nth-child(3) .radio-bg__label::before {
+        background: #09AE84;
+    }
+
+    &:nth-child(4) .radio-bg__label::before {
+         background: linear-gradient(140.74deg, #FF62F8 -7.94%, #7C47FF 119%);
+    }
+
+    &:nth-child(5) .radio-bg__label::before {
+        background: $color-text1-40
+    }
+
+    &__icon {
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        display: none;
+
+        @include vp-639 {
+            left: 13px;
+        }
+    }
+
+    &__input:checked ~ .radio-bg__icon {
+        display: block;
+    }
+}

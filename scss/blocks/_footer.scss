@@ -1,0 +1,235 @@
+.footer {
+    background-color: $color-bg2;
+    padding: 35px 0;
+
+    @include vp-1023 {
+      padding: 85px 0 35px;
+    }
+
+    &__top {
+    display: flex;
+    gap: 36px;
+    padding: 25px 0;
+    border-bottom: 1px solid $color-text1-10;
+
+    @include vp-1023 {
+      flex-direction: column;
+    }
+  }
+  
+    &__subscription {
+      width: calc(50% - 16px);
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      @include vp-1439 {
+        width: 305px;
+      }
+
+      @include vp-1023 {
+        width: 100%;
+        flex-direction: row;
+      }
+      
+      @include vp-639 {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      &-top {
+        width: 180px;
+      }
+  }
+  
+    &__logo {
+    margin-bottom: 20px;
+  }
+
+  &__subscription-list {
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 108px;
+
+    @include vp-1023 {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__subscription-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &-badge-plus {
+      background: radial-gradient(238.93% 187.08% at -20% 110%, #27C80C 9%, #BAFC00 100%);
+      border-radius: 7px;
+            padding: 3px;
+            display: flex;
+    }
+
+    &-badge-business {
+      background: radial-gradient(110.94% 210.53% at 0% 100%, #414A56 18.53%, #696B84 77.16%);
+            border-radius: 7px;
+            padding: 3px;
+            display: flex;
+    }
+
+    &-text {
+      font-weight: 500;
+    }
+  }
+
+  &__social-list {
+    padding: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  &__social-title {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__social-icon {
+    color: #999;
+  }
+
+  &__social-text {
+    color: $color-text1-80;
+  }
+
+  &__navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: calc(50% - 16px);
+    gap: 27px 32px;
+
+    @include vp-1439 {
+      gap: 15px 32px;
+      width: auto;
+    }
+
+    @include vp-639 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.01px;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__nav-link {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__middle {
+    display: flex;
+    gap: 36px;
+    padding: 25px 0;
+    border-bottom: 1px solid $color-text1-10;
+    align-items: center;
+
+    @include vp-1023 {
+      flex-direction: column;
+      padding: 20px 0;
+      gap: 15px;
+    }
+  }
+
+  &__contact-info {
+    width: calc(50% - 16px);
+
+    @include vp-1023 {
+      width: 100%;
+    }
+  }
+
+  &__phone {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 0 6px;
+  }
+
+  &__address {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-text1-40;
+    margin: 0;
+  }
+
+  &__company-info {
+    width: calc(50% - 16px);
+
+    @include vp-1023 {
+      width: 100%;
+    }
+
+    &-text {
+      line-height: 20px;
+      color: $color-text1-80;
+      margin: 0;
+
+      @include vp-1023 {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+    align-items: center;
+    color: $color-text1-40;
+
+    @include vp-1023 {
+      font-size: 13px;
+    }
+
+    @include vp-639 {
+      flex-direction: column;
+      padding: 0;
+      gap: 10px;
+      align-items: start;
+    }
+  }
+
+  &__feedback {
+    margin: 0 auto 0 0;
+    color: inherit;
+  }
+
+  &__privacy-policy {
+    color: inherit;
+  }
+
+  &__copyright {
+    margin: 0;
+  }
+} 

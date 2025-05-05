@@ -1,0 +1,217 @@
+.technologies {
+
+    padding: 25px 0 50px;
+
+    &__description {
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+        margin: 0 auto 50px;
+        color: $color-text1-40;
+        max-width: 650px;
+        
+        @include vp-1023 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        @include vp-639 {
+            font-size: 16px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 33px;
+        width: 100%;
+        grid-auto-flow: dense;
+
+        @include vp-1439 {
+            gap: 25px;
+        }
+
+        @include vp-1023 {
+            gap: 32px;
+        }
+
+        @include vp-639 {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        grid-column: span 2;
+        background-color: $color-bg2;
+        padding: 40px;
+        border-radius: 40px;
+        align-items: start;
+        min-height: 376px;
+
+        @include vp-1439 {
+            padding: 31px;
+            gap: 6px;
+            min-height: 292px;
+            border-radius: 31px;
+        }
+
+        @include vp-1023 {
+            padding: 15px 10px;
+            gap: 4px;
+            min-height: 172px;
+            border-radius: 18px;
+        }
+
+        @include vp-639 {
+            border-radius: 15px;
+            padding: 12px 8px;
+            min-height: 260px;
+        }
+
+        &:nth-child(1), 
+        &:nth-child(2) {
+
+            @include vp-639 {
+                order: -2;
+            }
+        }
+
+        
+
+        &:nth-child(4) {
+            grid-column: span 3;
+
+            @include vp-639 {
+                grid-column: span 4;
+                order: -1;
+            }
+        }
+
+        &:nth-child(5) {
+            grid-column: span 3;
+
+            @include vp-639 {
+                grid-column: span 4;
+
+            }
+        }
+
+        &-icon {
+            margin: 0 0 auto 0;
+            padding-bottom: 2px;
+
+            @include vp-1439 {
+                width: 47px;
+                height: 47px;
+            }
+
+            @include vp-1023 {
+                width: 27px;
+                height: 27px;
+            }
+
+            @include vp-639 {
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+        &-badge {
+            display: flex;
+            align-items: center;
+            background: radial-gradient(110.94% 210.53% at 0% 100%, #414A56 18.53%, #696B84 77.16%);
+            border-radius: 48px;
+            box-shadow: 0px 5px 8.8px 0px #0000003D;
+            padding: 4px 9px 4px 6px;
+            gap: 4px;
+
+            @include vp-1439 {
+                padding: 4px 5px;
+                gap: 3px;
+                border-radius: 37px;
+            }
+
+            @include vp-1023 {
+                padding: 2px 3px;
+                gap: 2px;
+                border-radius: 22px;
+            } 
+
+            @include vp-639 {
+                padding: 3px 4px;
+                gap: 3px;
+                border-radius: 35px;
+            }
+
+            &-icon {
+                // margin: 0 0 auto 0;
+    
+                @include vp-1439 {
+                    width: 15px;
+                    height: 13px;
+                }
+
+                @include vp-1023 {
+                    width: 9px;
+                    height: 8px;
+                }
+
+                @include vp-639 {
+                    width: 14px;
+                    height: 12px;
+                }
+            }
+
+            &-text {
+                color: $color-bg1;
+                font-size: 11px;
+                line-height: 13px;
+                font-weight: 700;
+
+                @include vp-1439 {
+                    font-size: 9px;
+                line-height: 120%;
+                }
+
+                @include vp-1023 {
+                    font-size: 5px;
+                }
+
+                @include vp-639 {
+                    font-size: 8px;
+                    line-height: 120%;
+                }
+            }
+        }
+
+        &-title {
+            margin: 0;
+        }
+
+        &-description {
+            margin: 0;
+            font-size: 18px;
+        line-height: 25px;
+        color: $color-text1-40;
+
+        @include vp-1439 {
+            font-size: 16px;
+        line-height: 120%;
+        }
+
+        @include vp-1023 {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        @include vp-639 {
+            font-size: 13px;
+    line-height: 17px;
+        }
+        }
+    }
+}
