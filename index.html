@@ -11,6 +11,39 @@
 </head>
 
 <body>
+  <div class="cookie">
+    <svg class="cookie__icon" width="34px" height="31px" viewBox="0 0 37 34" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_3460_756997)">
+        <path
+          d="M30.5664 15.399C29.6784 7.71829 22.7321 2.21171 15.0515 3.09969C7.37081 3.98767 1.86426 10.9339 2.75224 18.6146C3.64022 26.2953 10.5865 31.8019 18.2671 30.9139C25.9478 30.0259 31.4544 23.0797 30.5664 15.399Z"
+          fill="white" fill-opacity="0.08" />
+        <path
+          d="M18.6246 16.0321C19.6601 16.0321 20.4995 15.1927 20.4995 14.1572C20.4995 13.1217 19.6601 12.2822 18.6246 12.2822C17.5891 12.2822 16.7496 13.1217 16.7496 14.1572C16.7496 15.1927 17.5891 16.0321 18.6246 16.0321Z"
+          fill="white" />
+        <path
+          d="M16.1246 22.282C17.1602 22.282 17.9996 21.4425 17.9996 20.407C17.9996 19.3715 17.1602 18.5321 16.1246 18.5321C15.0891 18.5321 14.2497 19.3715 14.2497 20.407C14.2497 21.4425 15.0891 22.282 16.1246 22.282Z"
+          fill="white" />
+        <path
+          d="M24.2494 23.5319C24.9398 23.5319 25.4994 22.9723 25.4994 22.282C25.4994 21.5916 24.9398 21.032 24.2494 21.032C23.5591 21.032 22.9995 21.5916 22.9995 22.282C22.9995 22.9723 23.5591 23.5319 24.2494 23.5319Z"
+          fill="white" />
+        <path
+          d="M32.9367 17.2696C30.6992 17.2321 28.3118 14.8322 29.5868 11.9948C25.8744 13.2447 22.362 10.0073 23.0995 6.29492C14.3872 4.45747 7.99988 11.5448 7.99988 18.5321C7.99988 25.4319 13.5997 31.0317 20.4995 31.0317C27.8618 31.0317 33.6742 24.6819 32.9367 17.2696ZM20.4995 28.5318C14.9872 28.5318 10.4998 24.0444 10.4998 18.5321C10.4998 14.3947 13.9122 8.30736 20.5995 8.50735C21.1245 11.6823 23.6494 14.2072 26.8368 14.6822C26.9243 15.1322 27.4868 17.8696 30.4867 19.2196C30.1243 24.6069 25.5744 28.5318 20.4995 28.5318Z"
+          fill="white" />
+      </g>
+      <defs>
+        <clipPath id="clip0_3460_756997">
+          <rect width="33" height="30" fill="white" transform="translate(0.581909 4.02002) rotate(-6.59481)" />
+        </clipPath>
+      </defs>
+    </svg>
+    <p class="cookie__text">
+      Мы&nbsp;используем Cookies с&nbsp;целью персонализации сервисов и&nbsp;чтобы
+      пользоваться веб-сайтом было удобнее. Вы&nbsp;можете запретить обработку
+      Cookies в&nbsp;настройках браузера.
+    </p>
+    <button class="cookie__btn" type="button">Принять</button>
+  </div>
   <header class="header">
     <div class="container">
       <div class="header__content">
@@ -36,28 +69,233 @@
           </ul>
         </nav>
         <div class="header__right">
-          <button class="header__burger" type="button" aria-label="Открыть бургерное меню">
-            <svg class="header__burger-icon" width="18" height="12" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#icon-burger"></use>
-            </svg>
-            <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <button class="header__search" type="button" aria-label="Найти">
-            <svg class="header__search-icon" width="18" height="18" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#icon-search"></use>
-            </svg>
-          </button>
-          <button class="header__lang" type="button" aria-label="Выбрать язык">
-            Ru
-            <svg class="header__lang-icon" width="9" height="6" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#icon-arrow"></use>
-            </svg>
-          </button>
-          <button class="header__activate" type="button">
-            Подключить
-          </button>
+          <div class="header__burger">
+            <button class="header__burger-btn" type="button" aria-label="Открыть бургерное меню">
+              <svg class="header__burger-icon" width="18" height="12" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-burger"></use>
+              </svg>
+            </button>
+            <div class="header__burger-close"></div>
+            <div class="header__burger-menu">
+              <button class="header__activate" type="button">
+                Подключить
+              </button>
+              <nav class="main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Главная</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Продукты</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Для бизнеса</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Блог</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <form class="header__search" action="#" method="GET">
+            <div class="custom-search">
+              <svg class="header__search-icon" width="18" height="18" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-search"></use>
+              </svg>
+              <input type="search" class="header__search-field" aria-label="Поле поиска" name="search-field"
+                placeholder="Поиск" autocomplete="off" />
+            </div>
+          </form>
+          <div class="header__lang">
+            <button class="header__lang-btn" type="button" aria-label="Выбрать язык">
+              Ru
+              <svg class="header__lang-icon" width="9" height="6" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="header__lang-list">
+              <li class="header__lang-item">
+                <a href="#" class="header__lang-link header__lang-link--active">Ru</a>
+              </li>
+              <li class="header__lang-item">
+                <a href="#" class="header__lang-link">En</a>
+              </li>
+              <li class="header__lang-item">
+                <a href="#" class="header__lang-link">Ch</a>
+              </li>
+            </ul>
+          </div>
+          <button class="header__activate" type="button">Подключить</button>
+          <div class="header__user user">
+            <button class="user__btn user--plus" type="button">
+              <div class="user__badge-business">
+                <svg width="11" height="11" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-union"></use>
+                </svg>
+              </div>
+              <div class="user__badge-plus">
+                <svg width="11" height="11" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+              </div>
+            </button>
+            <ul class="user__list">
+              <li class="user__item">
+                <button class="user__account">
+                  <img class="user__account-avatar" src="images/user/photo.jpg" alt="аватар">
+                  <span class="user__account-name">Иванов Иван</span>
+                  <span class="user__account-nick">@moiakk</span>
+                  <svg class="user__account-icon" width="9" height="6" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <ul class="user__account-list">
+                  <li class="user__account-item">
+                    <button class="user__account">
+                      <img class="user__account-avatar" src="images/user/photo.jpg" alt="аватар">
+                      <span class="user__account-name">Иванов Иван</span>
+                      <span class="user__account-nick">@moiakk</span>
+                      <svg class="user__account-icon" width="18" height="13" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check-user"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="user__account-item">
+                    <button class="user__account">
+                      <img class="user__account-avatar" src="images/user/photo.jpg" alt="аватар">
+                      <span class="user__account-name">Иванов Иван</span>
+                      <span class="user__account-nick">@moiakk</span>
+                      <svg class="user__account-icon" width="18" height="13" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check-user"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="user__account-item">
+                    <button class="user__account">
+                      <img class="user__account-avatar" src="images/user/photo.jpg" alt="аватар">
+                      <span class="user__account-name">Иванов Иван</span>
+                      <span class="user__account-nick">@moiakk</span>
+                      <svg class="user__account-icon" width="18" height="13" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check-user"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="user__account-item">
+                    <a class="user__account-link" href="#">Все кабинеты</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="user__item">
+                <a class="user__link" href="#">
+                  <svg class="user__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-bell"></use>
+                  </svg>
+                  <span class="user__link-text">Уведомления</span>
+                  <span class="user__link-count">+999</span>
+                </a>
+              </li>
+              <li class="user__item">
+                <a class="user__link" href="#">
+                  <svg class="user__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-user"></use>
+                  </svg>
+                  <span class="user__link-text">Профиль</span>
+                </a>
+              </li>
+              <li class="user__item">
+                <a class="user__link" href="#">
+                  <svg class="user__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-settings"></use>
+                  </svg>
+                  <span class="user__link-text">Настройки</span>
+                </a>
+              </li>
+              <li class="user__item">
+                <button class="user__appearance">
+                  <svg class="user__appearance-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-appearance"></use>
+                  </svg>
+                  <span class="user__appearance-text">Внешний вид</span>
+                </button>
+                <ul class="user__appearance-list">
+                  <li class="user__appearance-item">
+                    <button class="user__appearance">
+                      <svg class="user__appearance-icon" width="20" height="20" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-sun"></use>
+                      </svg>
+                      <span class="user__appearance-text">Светлая тема</span>
+                      <svg class="user__appearance-icon" width="18" height="13" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check-user"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="user__appearance-item">
+                    <button class="user__appearance">
+                      <svg class="user__appearance-icon" width="20" height="20" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-moon"></use>
+                      </svg>
+                      <span class="user__appearance-text">Тёмная тема</span>
+                      <svg class="user__appearance-icon" width="18" height="13" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check-user"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="user__appearance-item">
+                    <button class="user__appearance">
+                      <svg class="user__appearance-icon" width="20" height="20" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-system"></use>
+                      </svg>
+                      <span class="user__appearance-text">Системная тема</span>
+                      <svg class="user__appearance-icon" width="18" height="13" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-check-user"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="user__item">
+                <a class="user__link" href="#">
+                  <svg class="user__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-history"></use>
+                  </svg>
+                  <span class="user__link-text">История</span>
+                </a>
+              </li>
+              <li class="user__item">
+                <a class="user__link" href="#">
+                  <svg class="user__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-support"></use>
+                  </svg>
+                  <span class="user__link-text">Связаться с&nbsp;нами</span>
+                </a>
+              </li>
+              <li class="user__item">
+                <a class="user__link" href="#">
+                  <svg class="user__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-order"></use>
+                  </svg>
+                  <span class="user__link-text">Мои заказы</span>
+                </a>
+              </li>
+              <li class="user__item">
+                <a class="user__link" href="#">
+                  <svg class="user__link-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-add-user"></use>
+                  </svg>
+                  <span class="user__link-text">Добавить аккаунт</span>
+                </a>
+              </li>
+              <li class="user__item">
+                <button class="user__quit" type="button">
+                  <svg class="user__quit-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-quite"></use>
+                  </svg>
+                  <span class="user__quit-text">Выйти из&nbsp;профиля</span>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -66,19 +304,13 @@
     <section class="hero">
       <h1 class="hero__title">Цифровые визитки для ваших задач</h1>
       <p class="hero__description">
-        Digital визитки - будущее для цифрового бизнеса и ваших идей
+        Digital визитки&nbsp;&mdash; будущее для цифрового бизнеса и&nbsp;ваших идей
       </p>
       <div class="hero__img-wrapper">
         <picture>
-          <source media="(max-width: 639px)" srcset="
-                images/hero/hero-mobile.png
-              " />
-          <source media="(max-width: 1023px)" srcset="
-                images/hero/hero-tablet.png
-              " />
-          <source media="(max-width: 1439px)" srcset="
-                images/hero/hero-middle.png
-              " />
+          <source media="(max-width: 639px)" srcset="images/hero/hero-mobile.png" />
+          <source media="(max-width: 1023px)" srcset="images/hero/hero-tablet.png" />
+          <source media="(max-width: 1439px)" srcset="images/hero/hero-middle.png" />
           <img class="hero__image" src="images/hero/hero.png" alt="Приложение на телефоне" />
         </picture>
       </div>
@@ -86,10 +318,10 @@
     <section class="find-more">
       <div class="container">
         <h2 class="find-more__title">
-          Узнайте больше об электронных визитках
+          Узнайте больше об&nbsp;электронных визитках
         </h2>
         <p class="find-more__description">
-          Виртуальный офис для вас и вашей компании, точная статистика,
+          Виртуальный офис для вас и&nbsp;вашей компании, точная статистика,
           редактор для визиток
         </p>
         <ul class="find-more__list">
@@ -98,19 +330,17 @@
               <picture>
                 <source media="(max-width: 639px)" srcset="images/find-more/find-more1-mobile.png" />
                 <source media="(max-width: 1023px)" srcset="images/find-more/find-more1-tablet.png" />
-                <img class="find-more__image" src="images/find-more/find-more1.png"
-                  alt="Приложение на телефоне" />
+                <img class="find-more__image" src="images/find-more/find-more1.png" alt="Приложение на телефоне" />
               </picture>
             </div>
-            <span class="find-more__item-text">Создавайте визитки и делитесь ими</span>
+            <span class="find-more__item-text">Создавайте визитки и&nbsp;делитесь ими</span>
           </li>
           <li class="find-more__item">
             <div class="find-more__item-img">
               <picture>
                 <source media="(max-width: 639px)" srcset="images/find-more/find-more2-mobile.png" />
                 <source media="(max-width: 1023px)" srcset="images/find-more/find-more2-tablet.png" />
-                <img class="find-more__image" src="images/find-more/find-more2.png"
-                  alt="Приложение на телефоне" />
+                <img class="find-more__image" src="images/find-more/find-more2.png" alt="Приложение на телефоне" />
               </picture>
             </div>
             <span class="find-more__item-text">Создавайте свои уникальные NFC метки</span>
@@ -120,44 +350,40 @@
               <picture>
                 <source media="(max-width: 639px)" srcset="images/find-more/find-more3-mobile.png" />
                 <source media="(max-width: 1023px)" srcset="images/find-more/find-more3-tablet.png" />
-                <img class="find-more__image" src="images/find-more/find-more3.png"
-                  alt="Приложение на телефоне" />
+                <img class="find-more__image" src="images/find-more/find-more3.png" alt="Приложение на телефоне" />
               </picture>
             </div>
-            <span class="find-more__item-text">Работайте в команде</span>
+            <span class="find-more__item-text">Работайте в&nbsp;команде</span>
           </li>
           <li class="find-more__item">
             <div class="find-more__item-img">
               <picture>
                 <source media="(max-width: 639px)" srcset="images/find-more/find-more4-mobile.png" />
                 <source media="(max-width: 1023px)" srcset="images/find-more/find-more4-tablet.png" />
-                <img class="find-more__image" src="images/find-more/find-more4.png"
-                  alt="Приложение на телефоне" />
+                <img class="find-more__image" src="images/find-more/find-more4.png" alt="Приложение на телефоне" />
               </picture>
             </div>
-            <span class="find-more__item-text">Подключайте NFC метки к визиткам</span>
+            <span class="find-more__item-text">Подключайте NFC метки к&nbsp;визиткам</span>
           </li>
           <li class="find-more__item">
             <div class="find-more__item-img">
               <picture>
                 <source media="(max-width: 639px)" srcset="images/find-more/find-more5-mobile.png" />
                 <source media="(max-width: 1023px)" srcset="images/find-more/find-more5-tablet.png" />
-                <img class="find-more__image" src="images/find-more/find-more5.png"
-                  alt="Приложение на телефоне" />
+                <img class="find-more__image" src="images/find-more/find-more5.png" alt="Приложение на телефоне" />
               </picture>
             </div>
-            <span class="find-more__item-text">Получайте достижения и приятные бонусы</span>
+            <span class="find-more__item-text">Получайте достижения и&nbsp;приятные бонусы</span>
           </li>
           <li class="find-more__item">
             <div class="find-more__item-img">
               <picture>
                 <source media="(max-width: 639px)" srcset="images/find-more/find-more6-mobile.png" />
                 <source media="(max-width: 1023px)" srcset="images/find-more/find-more6-tablet.png" />
-                <img class="find-more__image" src="images/find-more/find-more6.png"
-                  alt="Приложение на телефоне" />
+                <img class="find-more__image" src="images/find-more/find-more6.png" alt="Приложение на телефоне" />
               </picture>
             </div>
-            <span class="find-more__item-text">Улучшайте визитку с помощью статистики</span>
+            <span class="find-more__item-text">Улучшайте визитку с&nbsp;помощью статистики</span>
           </li>
         </ul>
       </div>
@@ -165,169 +391,224 @@
     <section class="technologies">
       <div class="container">
         <h2 class="technologies__title">
-          Новые технологии для удобной и простой работы с бизнесом
+          Новые технологии для удобной и&nbsp;простой работы с&nbsp;бизнесом
         </h2>
         <p class="technologies__description">
           Виртуальный офис для вашей компании: корпоративная почта, календарь,
-          облачное хранилище, редактор документов и сервисы для коммуникации
+          облачное хранилище, редактор документов и&nbsp;сервисы для коммуникации
         </p>
         <ul class="technologies__list">
           <li class="technologies__item">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_3460_722311)">
-              <g clip-path="url(#clip1_3460_722311)">
-              <g clip-path="url(#clip2_3460_722311)">
-              <mask id="mask0_3460_722311" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#FF3333"/>
-              </mask>
-              <g mask="url(#mask0_3460_722311)">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#FED42B"/>
-              <path d="M50.1413 59.8166C51.5965 59.5133 52.4632 57.9906 51.7401 56.6919C50.146 53.8288 47.6347 51.3129 44.4221 49.3956C40.2846 46.9263 35.2152 45.5879 30 45.5879C24.7848 45.5879 19.7154 46.9263 15.5779 49.3956C12.3653 51.3129 9.85402 53.8288 8.25993 56.6919C7.53684 57.9906 8.40349 59.5133 9.85868 59.8166C23.1435 62.5852 36.8565 62.5852 50.1413 59.8166Z" fill="white"/>
-              <path d="M43.1616 27.1616C43.1616 34.4306 37.269 40.3232 30 40.3232C22.731 40.3232 16.8384 34.4306 16.8384 27.1616C16.8384 19.8927 22.731 14 30 14C37.269 14 43.1616 19.8927 43.1616 27.1616Z" fill="white"/>
-              <path d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z" fill="url(#paint0_linear_3460_722311)"/>
-              </g>
-              </g>
-              </g>
+                <g clip-path="url(#clip1_3460_722311)">
+                  <g clip-path="url(#clip2_3460_722311)">
+                    <mask id="mask0_3460_722311" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                      width="60" height="60">
+                      <path
+                        d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                        fill="#FF3333" />
+                    </mask>
+                    <g mask="url(#mask0_3460_722311)">
+                      <path
+                        d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                        fill="#FED42B" />
+                      <path
+                        d="M50.1413 59.8166C51.5965 59.5133 52.4632 57.9906 51.7401 56.6919C50.146 53.8288 47.6347 51.3129 44.4221 49.3956C40.2846 46.9263 35.2152 45.5879 30 45.5879C24.7848 45.5879 19.7154 46.9263 15.5779 49.3956C12.3653 51.3129 9.85402 53.8288 8.25993 56.6919C7.53684 57.9906 8.40349 59.5133 9.85868 59.8166C23.1435 62.5852 36.8565 62.5852 50.1413 59.8166Z"
+                        fill="white" />
+                      <path
+                        d="M43.1616 27.1616C43.1616 34.4306 37.269 40.3232 30 40.3232C22.731 40.3232 16.8384 34.4306 16.8384 27.1616C16.8384 19.8927 22.731 14 30 14C37.269 14 43.1616 19.8927 43.1616 27.1616Z"
+                        fill="white" />
+                      <path
+                        d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z"
+                        fill="url(#paint0_linear_3460_722311)" />
+                    </g>
+                  </g>
+                </g>
               </g>
               <defs>
-              <linearGradient id="paint0_linear_3460_722311" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white" stop-opacity="0.3381"/>
-              <stop offset="0.5355" stop-color="white" stop-opacity="0"/>
-              <stop offset="1" stop-color="white" stop-opacity="0"/>
-              </linearGradient>
-              <clipPath id="clip0_3460_722311">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
-              <clipPath id="clip1_3460_722311">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
-              <clipPath id="clip2_3460_722311">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
+                <linearGradient id="paint0_linear_3460_722311" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.3381" />
+                  <stop offset="0.5355" stop-color="white" stop-opacity="0" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <clipPath id="clip0_3460_722311">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_3460_722311">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
+                <clipPath id="clip2_3460_722311">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
               </defs>
-              </svg>
-              
+            </svg>
+
             <h3 class="technologies__item-title">Личная визитка</h3>
             <p class="technologies__item-description">
-              Современное и удобное решение для обмена контактной информацией
+              Современное и&nbsp;удобное решение для обмена контактной информацией
             </p>
           </li>
           <li class="technologies__item">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_3460_722329)">
-              <g clip-path="url(#clip1_3460_722329)">
-              <mask id="mask0_3460_722329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#FF3333"/>
-              </mask>
-              <g mask="url(#mask0_3460_722329)">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#27C80C"/>
-              <path d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z" fill="url(#paint0_linear_3460_722329)"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4475 18.4495C20.861 18.8861 22.2157 19.8416 23.2574 21.1537C24.2986 22.4653 24.9191 23.9976 25.0089 25.4696C25.0984 26.9367 24.6512 28.51 23.3386 29.5197C22.033 30.5242 20.3958 30.5668 18.9927 30.1334C17.5792 29.6968 16.2245 28.7413 15.1828 27.4292C14.1416 26.1176 13.521 24.5853 13.4313 23.1132C13.3418 21.6462 13.789 20.0729 15.1015 19.0631C16.4072 18.0587 18.0444 18.0161 19.4475 18.4495ZM18.4726 21.6058C17.7566 21.3847 17.3255 21.5201 17.1158 21.6814C16.9131 21.8374 16.685 22.1968 16.7286 22.9122C16.7719 23.6225 17.0929 24.5223 17.77 25.3752C18.4468 26.2276 19.2619 26.7591 19.9675 26.9771C20.6835 27.1982 21.1147 27.0628 21.3243 26.9015C21.5271 26.7455 21.7552 26.386 21.7116 25.6707C21.6683 24.9604 21.3473 24.0606 20.6701 23.2077C19.9934 22.3553 19.1783 21.8237 18.4726 21.6058ZM29.3217 15.8373C29.1078 16.5441 29.0926 17.5171 29.4209 18.5548C29.7493 19.5932 30.3158 20.3624 30.8804 20.7956C31.4491 21.2317 31.8747 21.2436 32.1173 21.1627C32.3683 21.0791 32.7217 20.7974 32.9387 20.0802C33.1526 19.3733 33.1678 18.4003 32.8395 17.3626C32.5111 16.3243 31.9446 15.555 31.38 15.1219C30.8113 14.6857 30.3857 14.6738 30.1431 14.7547C29.8921 14.8383 29.5387 15.12 29.3217 15.8373ZM26.1598 14.8805C26.5852 13.4749 27.536 12.1414 29.0988 11.6207C30.6699 11.0972 32.2243 11.6062 33.3905 12.5007C34.5607 13.3983 35.4841 14.7696 35.9891 16.3663C36.4944 17.9635 36.529 19.621 36.1006 21.037C35.6752 22.4426 34.7244 23.7761 33.1616 24.2968C31.5905 24.8203 30.0361 24.3113 28.8699 23.4167C27.6997 22.5191 26.7763 21.1478 26.2713 19.5512C25.766 17.9539 25.7314 16.2964 26.1598 14.8805ZM16.3469 31.9209C17.7698 32.0277 19.2608 32.6431 20.5538 33.6472C21.8481 34.6522 22.8202 35.9499 23.3025 37.3022C23.7768 38.6317 23.8392 40.2472 22.8829 41.5563C21.9146 42.8817 20.3505 43.2832 18.9398 43.1773C17.5169 43.0705 16.026 42.4551 14.7329 41.451C13.4386 40.446 12.4665 39.1483 11.9842 37.796C11.5099 36.4665 11.4475 34.851 12.4039 33.5419C13.3721 32.2165 14.9362 31.815 16.3469 31.9209ZM16.0996 35.215C15.4099 35.1633 15.151 35.3815 15.0713 35.4906C14.9797 35.6159 14.843 35.978 15.0956 36.6862C15.3401 37.3716 15.8961 38.1718 16.759 38.8418C17.623 39.5128 18.5097 39.8323 19.1871 39.8832C19.8768 39.9349 20.1357 39.7167 20.2154 39.6076C20.307 39.4823 20.4437 39.1202 20.1911 38.412C19.9466 37.7266 19.3906 36.9264 18.5278 36.2564C17.6637 35.5854 16.777 35.2659 16.0996 35.215ZM41.9312 21.4801C41.5946 22.0702 41.3636 22.984 41.4367 24.0755C41.5097 25.1654 41.8622 26.0739 42.2937 26.6599C42.7395 27.2653 43.1162 27.3544 43.2713 27.3486C43.4063 27.3435 43.732 27.2509 44.0748 26.6501C44.4114 26.0601 44.6423 25.1463 44.5693 24.0548C44.4963 22.9649 44.1438 22.0564 43.7123 21.4704C43.2665 20.865 42.8898 20.7759 42.7346 20.7817C42.5996 20.7868 42.274 20.8794 41.9312 21.4801ZM39.062 19.843C39.763 18.6144 40.9705 17.5422 42.6107 17.4806C44.2308 17.4198 45.5352 18.3749 46.3723 19.5115C47.2237 20.6676 47.7559 22.1992 47.8653 23.8342C47.9747 25.4677 47.6512 27.0478 46.944 28.2872C46.243 29.5159 45.0354 30.5881 43.3952 30.6497C41.7752 30.7105 40.4708 29.7554 39.6337 28.6187C38.7823 27.4626 38.2501 25.9311 38.1407 24.2961C38.0313 22.6626 38.3548 21.0824 39.062 19.843ZM25.8514 32.9804C26.1721 31.1889 27.0307 29.4919 29.0523 28.417C31.0739 27.3421 32.961 27.5792 34.6255 28.3152C35.8657 28.8635 37.1065 29.7538 38.2266 30.5576C38.4804 30.7397 38.728 30.9174 38.968 31.0856C39.9567 31.7787 40.8176 32.2752 41.6251 32.7408C41.9248 32.9136 42.2171 33.0821 42.5058 33.2549C43.4783 33.8368 44.5809 34.5574 45.2077 35.7367C45.7093 36.6805 45.925 37.6322 45.8208 38.5647C45.7171 39.4922 45.3139 40.2476 44.8365 40.8334C43.9698 41.8967 42.7056 42.5673 42.0468 42.9168C42.023 42.9294 42 42.9416 41.9778 42.9534C41.2296 43.3512 40.6155 43.5461 40.0818 43.7155C40.0133 43.7372 39.946 43.7586 39.88 43.7799C39.3231 43.9595 38.6962 44.1786 37.7114 44.7022C36.7265 45.2259 36.1943 45.6231 35.734 45.9843C35.6794 46.0272 35.6241 46.071 35.5677 46.1157C35.1289 46.4634 34.6239 46.8635 33.8757 47.2613C33.8535 47.2731 33.8305 47.2854 33.8068 47.2981C33.1487 47.6488 31.8858 48.3219 30.5196 48.4458C29.767 48.5141 28.9153 48.4259 28.0883 47.9932C27.257 47.5582 26.5886 46.8471 26.0867 45.9035C25.4594 44.7244 25.4787 43.4074 25.54 42.2757C25.5583 41.9398 25.582 41.6032 25.6063 41.2581C25.6718 40.3284 25.7417 39.3369 25.7199 38.1297C25.7147 37.8367 25.7058 37.532 25.6968 37.2198C25.6568 35.8417 25.6125 34.3152 25.8514 32.9804ZM28.9962 36.9578C29.0058 37.3099 29.0158 37.6799 29.0228 38.0703C29.0474 39.4378 28.9622 40.6454 28.8946 41.6024C28.8726 41.9141 28.8525 42.1992 28.8386 42.4545C28.7763 43.6035 28.8512 44.0664 29.0031 44.3521C29.2536 44.8229 29.4837 44.995 29.6198 45.0662C29.7604 45.1398 29.9453 45.1809 30.2212 45.1559C30.8627 45.0977 31.5834 44.7388 32.3248 44.3446C32.7968 44.0936 33.0779 43.8719 33.5161 43.5261C33.5727 43.4815 33.6319 43.4347 33.6945 43.3856C34.2608 42.9412 34.9578 42.425 36.1605 41.7855C37.3632 41.146 38.1809 40.8569 38.866 40.6359C38.9417 40.6115 39.0136 40.5885 39.0823 40.5665C39.614 40.3966 39.9549 40.2876 40.4269 40.0366C41.1684 39.6424 41.8689 39.2456 42.2758 38.7463C42.4509 38.5315 42.5202 38.3553 42.5378 38.1976C42.5549 38.0449 42.5409 37.7579 42.2906 37.287C42.1387 37.0012 41.7968 36.6804 40.8095 36.0895C40.59 35.9582 40.3424 35.8155 40.0717 35.6594C39.2405 35.1803 38.1917 34.5757 37.0718 33.7906C36.7521 33.5665 36.4509 33.3513 36.1644 33.1464C35.0696 32.364 34.1871 31.7332 33.2897 31.3365C32.3009 30.8993 31.512 30.8506 30.6032 31.3338C29.6944 31.817 29.2937 32.4982 29.1032 33.5625C28.9303 34.5283 28.9597 35.6127 28.9962 36.9578Z" fill="white"/>
-              <path d="M41.4367 24.0755C41.3636 22.984 41.5946 22.0702 41.9312 21.4801C42.274 20.8794 42.5996 20.7868 42.7346 20.7817C42.8898 20.7759 43.2665 20.865 43.7123 21.4704C44.1438 22.0564 44.4963 22.9649 44.5693 24.0548C44.6423 25.1463 44.4114 26.0601 44.0748 26.6501C43.732 27.2509 43.4063 27.3435 43.2713 27.3486C43.1162 27.3544 42.7395 27.2653 42.2937 26.6599C41.8622 26.0739 41.5097 25.1654 41.4367 24.0755Z" fill="white"/>
-              <path d="M29.4209 18.5548C29.0926 17.5171 29.1078 16.5441 29.3217 15.8373C29.5387 15.12 29.8921 14.8383 30.1431 14.7547C30.3857 14.6738 30.8113 14.6857 31.38 15.1219C31.9446 15.555 32.5111 16.3243 32.8395 17.3626C33.1678 18.4003 33.1526 19.3733 32.9387 20.0802C32.7217 20.7974 32.3683 21.0791 32.1173 21.1627C31.8747 21.2436 31.4491 21.2317 30.8804 20.7956C30.3158 20.3624 29.7493 19.5932 29.4209 18.5548Z" fill="white"/>
-              <path d="M17.1158 21.6814C17.3255 21.5201 17.7566 21.3847 18.4726 21.6058C19.1783 21.8237 19.9934 22.3553 20.6701 23.2077C21.3473 24.0606 21.6683 24.9604 21.7116 25.6707C21.7552 26.386 21.5271 26.7455 21.3243 26.9015C21.1147 27.0628 20.6835 27.1982 19.9675 26.9771C19.2619 26.7591 18.4468 26.2276 17.77 25.3752C17.0929 24.5223 16.7719 23.6225 16.7286 22.9122C16.685 22.1968 16.9131 21.8374 17.1158 21.6814Z" fill="white"/>
-              <path d="M15.0713 35.4906C15.151 35.3815 15.4099 35.1633 16.0996 35.215C16.777 35.2659 17.6637 35.5854 18.5278 36.2564C19.3906 36.9264 19.9466 37.7266 20.1911 38.412C20.4437 39.1202 20.307 39.4823 20.2154 39.6076C20.1357 39.7167 19.8768 39.9349 19.1871 39.8832C18.5097 39.8323 17.623 39.5128 16.759 38.8418C15.8961 38.1718 15.3401 37.3716 15.0956 36.6862C14.843 35.978 14.9797 35.6159 15.0713 35.4906Z" fill="white"/>
-              <path d="M29.0228 38.0703C29.0158 37.6799 29.0058 37.3099 28.9962 36.9578C28.9597 35.6127 28.9303 34.5283 29.1032 33.5625C29.2937 32.4982 29.6944 31.817 30.6032 31.3338C31.512 30.8506 32.3009 30.8993 33.2897 31.3365C34.1871 31.7332 35.0696 32.364 36.1644 33.1464C36.4509 33.3513 36.7521 33.5665 37.0718 33.7906C38.1917 34.5757 39.2405 35.1803 40.0717 35.6594C40.3424 35.8155 40.59 35.9582 40.8095 36.0895C41.7968 36.6804 42.1387 37.0012 42.2906 37.287C42.5409 37.7579 42.5549 38.0449 42.5378 38.1976C42.5202 38.3553 42.4509 38.5315 42.2758 38.7463C41.8689 39.2456 41.1684 39.6424 40.4269 40.0366C39.9549 40.2876 39.614 40.3966 39.0823 40.5665C39.0136 40.5885 38.9417 40.6115 38.866 40.6359C38.1809 40.8569 37.3632 41.146 36.1605 41.7855C34.9578 42.425 34.2608 42.9412 33.6945 43.3856C33.6319 43.4347 33.5727 43.4815 33.5161 43.5261C33.0779 43.8719 32.7968 44.0936 32.3248 44.3446C31.5834 44.7388 30.8627 45.0977 30.2212 45.1559C29.9453 45.1809 29.7604 45.1398 29.6198 45.0662C29.4837 44.995 29.2536 44.8229 29.0031 44.3521C28.8512 44.0664 28.7763 43.6035 28.8386 42.4545C28.8525 42.1992 28.8726 41.9141 28.8946 41.6024C28.9622 40.6454 29.0474 39.4378 29.0228 38.0703Z" fill="white"/>
-              </g>
-              </g>
+                <g clip-path="url(#clip1_3460_722329)">
+                  <mask id="mask0_3460_722329" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                    width="60" height="60">
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="#FF3333" />
+                  </mask>
+                  <g mask="url(#mask0_3460_722329)">
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="#27C80C" />
+                    <path
+                      d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z"
+                      fill="url(#paint0_linear_3460_722329)" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M19.4475 18.4495C20.861 18.8861 22.2157 19.8416 23.2574 21.1537C24.2986 22.4653 24.9191 23.9976 25.0089 25.4696C25.0984 26.9367 24.6512 28.51 23.3386 29.5197C22.033 30.5242 20.3958 30.5668 18.9927 30.1334C17.5792 29.6968 16.2245 28.7413 15.1828 27.4292C14.1416 26.1176 13.521 24.5853 13.4313 23.1132C13.3418 21.6462 13.789 20.0729 15.1015 19.0631C16.4072 18.0587 18.0444 18.0161 19.4475 18.4495ZM18.4726 21.6058C17.7566 21.3847 17.3255 21.5201 17.1158 21.6814C16.9131 21.8374 16.685 22.1968 16.7286 22.9122C16.7719 23.6225 17.0929 24.5223 17.77 25.3752C18.4468 26.2276 19.2619 26.7591 19.9675 26.9771C20.6835 27.1982 21.1147 27.0628 21.3243 26.9015C21.5271 26.7455 21.7552 26.386 21.7116 25.6707C21.6683 24.9604 21.3473 24.0606 20.6701 23.2077C19.9934 22.3553 19.1783 21.8237 18.4726 21.6058ZM29.3217 15.8373C29.1078 16.5441 29.0926 17.5171 29.4209 18.5548C29.7493 19.5932 30.3158 20.3624 30.8804 20.7956C31.4491 21.2317 31.8747 21.2436 32.1173 21.1627C32.3683 21.0791 32.7217 20.7974 32.9387 20.0802C33.1526 19.3733 33.1678 18.4003 32.8395 17.3626C32.5111 16.3243 31.9446 15.555 31.38 15.1219C30.8113 14.6857 30.3857 14.6738 30.1431 14.7547C29.8921 14.8383 29.5387 15.12 29.3217 15.8373ZM26.1598 14.8805C26.5852 13.4749 27.536 12.1414 29.0988 11.6207C30.6699 11.0972 32.2243 11.6062 33.3905 12.5007C34.5607 13.3983 35.4841 14.7696 35.9891 16.3663C36.4944 17.9635 36.529 19.621 36.1006 21.037C35.6752 22.4426 34.7244 23.7761 33.1616 24.2968C31.5905 24.8203 30.0361 24.3113 28.8699 23.4167C27.6997 22.5191 26.7763 21.1478 26.2713 19.5512C25.766 17.9539 25.7314 16.2964 26.1598 14.8805ZM16.3469 31.9209C17.7698 32.0277 19.2608 32.6431 20.5538 33.6472C21.8481 34.6522 22.8202 35.9499 23.3025 37.3022C23.7768 38.6317 23.8392 40.2472 22.8829 41.5563C21.9146 42.8817 20.3505 43.2832 18.9398 43.1773C17.5169 43.0705 16.026 42.4551 14.7329 41.451C13.4386 40.446 12.4665 39.1483 11.9842 37.796C11.5099 36.4665 11.4475 34.851 12.4039 33.5419C13.3721 32.2165 14.9362 31.815 16.3469 31.9209ZM16.0996 35.215C15.4099 35.1633 15.151 35.3815 15.0713 35.4906C14.9797 35.6159 14.843 35.978 15.0956 36.6862C15.3401 37.3716 15.8961 38.1718 16.759 38.8418C17.623 39.5128 18.5097 39.8323 19.1871 39.8832C19.8768 39.9349 20.1357 39.7167 20.2154 39.6076C20.307 39.4823 20.4437 39.1202 20.1911 38.412C19.9466 37.7266 19.3906 36.9264 18.5278 36.2564C17.6637 35.5854 16.777 35.2659 16.0996 35.215ZM41.9312 21.4801C41.5946 22.0702 41.3636 22.984 41.4367 24.0755C41.5097 25.1654 41.8622 26.0739 42.2937 26.6599C42.7395 27.2653 43.1162 27.3544 43.2713 27.3486C43.4063 27.3435 43.732 27.2509 44.0748 26.6501C44.4114 26.0601 44.6423 25.1463 44.5693 24.0548C44.4963 22.9649 44.1438 22.0564 43.7123 21.4704C43.2665 20.865 42.8898 20.7759 42.7346 20.7817C42.5996 20.7868 42.274 20.8794 41.9312 21.4801ZM39.062 19.843C39.763 18.6144 40.9705 17.5422 42.6107 17.4806C44.2308 17.4198 45.5352 18.3749 46.3723 19.5115C47.2237 20.6676 47.7559 22.1992 47.8653 23.8342C47.9747 25.4677 47.6512 27.0478 46.944 28.2872C46.243 29.5159 45.0354 30.5881 43.3952 30.6497C41.7752 30.7105 40.4708 29.7554 39.6337 28.6187C38.7823 27.4626 38.2501 25.9311 38.1407 24.2961C38.0313 22.6626 38.3548 21.0824 39.062 19.843ZM25.8514 32.9804C26.1721 31.1889 27.0307 29.4919 29.0523 28.417C31.0739 27.3421 32.961 27.5792 34.6255 28.3152C35.8657 28.8635 37.1065 29.7538 38.2266 30.5576C38.4804 30.7397 38.728 30.9174 38.968 31.0856C39.9567 31.7787 40.8176 32.2752 41.6251 32.7408C41.9248 32.9136 42.2171 33.0821 42.5058 33.2549C43.4783 33.8368 44.5809 34.5574 45.2077 35.7367C45.7093 36.6805 45.925 37.6322 45.8208 38.5647C45.7171 39.4922 45.3139 40.2476 44.8365 40.8334C43.9698 41.8967 42.7056 42.5673 42.0468 42.9168C42.023 42.9294 42 42.9416 41.9778 42.9534C41.2296 43.3512 40.6155 43.5461 40.0818 43.7155C40.0133 43.7372 39.946 43.7586 39.88 43.7799C39.3231 43.9595 38.6962 44.1786 37.7114 44.7022C36.7265 45.2259 36.1943 45.6231 35.734 45.9843C35.6794 46.0272 35.6241 46.071 35.5677 46.1157C35.1289 46.4634 34.6239 46.8635 33.8757 47.2613C33.8535 47.2731 33.8305 47.2854 33.8068 47.2981C33.1487 47.6488 31.8858 48.3219 30.5196 48.4458C29.767 48.5141 28.9153 48.4259 28.0883 47.9932C27.257 47.5582 26.5886 46.8471 26.0867 45.9035C25.4594 44.7244 25.4787 43.4074 25.54 42.2757C25.5583 41.9398 25.582 41.6032 25.6063 41.2581C25.6718 40.3284 25.7417 39.3369 25.7199 38.1297C25.7147 37.8367 25.7058 37.532 25.6968 37.2198C25.6568 35.8417 25.6125 34.3152 25.8514 32.9804ZM28.9962 36.9578C29.0058 37.3099 29.0158 37.6799 29.0228 38.0703C29.0474 39.4378 28.9622 40.6454 28.8946 41.6024C28.8726 41.9141 28.8525 42.1992 28.8386 42.4545C28.7763 43.6035 28.8512 44.0664 29.0031 44.3521C29.2536 44.8229 29.4837 44.995 29.6198 45.0662C29.7604 45.1398 29.9453 45.1809 30.2212 45.1559C30.8627 45.0977 31.5834 44.7388 32.3248 44.3446C32.7968 44.0936 33.0779 43.8719 33.5161 43.5261C33.5727 43.4815 33.6319 43.4347 33.6945 43.3856C34.2608 42.9412 34.9578 42.425 36.1605 41.7855C37.3632 41.146 38.1809 40.8569 38.866 40.6359C38.9417 40.6115 39.0136 40.5885 39.0823 40.5665C39.614 40.3966 39.9549 40.2876 40.4269 40.0366C41.1684 39.6424 41.8689 39.2456 42.2758 38.7463C42.4509 38.5315 42.5202 38.3553 42.5378 38.1976C42.5549 38.0449 42.5409 37.7579 42.2906 37.287C42.1387 37.0012 41.7968 36.6804 40.8095 36.0895C40.59 35.9582 40.3424 35.8155 40.0717 35.6594C39.2405 35.1803 38.1917 34.5757 37.0718 33.7906C36.7521 33.5665 36.4509 33.3513 36.1644 33.1464C35.0696 32.364 34.1871 31.7332 33.2897 31.3365C32.3009 30.8993 31.512 30.8506 30.6032 31.3338C29.6944 31.817 29.2937 32.4982 29.1032 33.5625C28.9303 34.5283 28.9597 35.6127 28.9962 36.9578Z"
+                      fill="white" />
+                    <path
+                      d="M41.4367 24.0755C41.3636 22.984 41.5946 22.0702 41.9312 21.4801C42.274 20.8794 42.5996 20.7868 42.7346 20.7817C42.8898 20.7759 43.2665 20.865 43.7123 21.4704C44.1438 22.0564 44.4963 22.9649 44.5693 24.0548C44.6423 25.1463 44.4114 26.0601 44.0748 26.6501C43.732 27.2509 43.4063 27.3435 43.2713 27.3486C43.1162 27.3544 42.7395 27.2653 42.2937 26.6599C41.8622 26.0739 41.5097 25.1654 41.4367 24.0755Z"
+                      fill="white" />
+                    <path
+                      d="M29.4209 18.5548C29.0926 17.5171 29.1078 16.5441 29.3217 15.8373C29.5387 15.12 29.8921 14.8383 30.1431 14.7547C30.3857 14.6738 30.8113 14.6857 31.38 15.1219C31.9446 15.555 32.5111 16.3243 32.8395 17.3626C33.1678 18.4003 33.1526 19.3733 32.9387 20.0802C32.7217 20.7974 32.3683 21.0791 32.1173 21.1627C31.8747 21.2436 31.4491 21.2317 30.8804 20.7956C30.3158 20.3624 29.7493 19.5932 29.4209 18.5548Z"
+                      fill="white" />
+                    <path
+                      d="M17.1158 21.6814C17.3255 21.5201 17.7566 21.3847 18.4726 21.6058C19.1783 21.8237 19.9934 22.3553 20.6701 23.2077C21.3473 24.0606 21.6683 24.9604 21.7116 25.6707C21.7552 26.386 21.5271 26.7455 21.3243 26.9015C21.1147 27.0628 20.6835 27.1982 19.9675 26.9771C19.2619 26.7591 18.4468 26.2276 17.77 25.3752C17.0929 24.5223 16.7719 23.6225 16.7286 22.9122C16.685 22.1968 16.9131 21.8374 17.1158 21.6814Z"
+                      fill="white" />
+                    <path
+                      d="M15.0713 35.4906C15.151 35.3815 15.4099 35.1633 16.0996 35.215C16.777 35.2659 17.6637 35.5854 18.5278 36.2564C19.3906 36.9264 19.9466 37.7266 20.1911 38.412C20.4437 39.1202 20.307 39.4823 20.2154 39.6076C20.1357 39.7167 19.8768 39.9349 19.1871 39.8832C18.5097 39.8323 17.623 39.5128 16.759 38.8418C15.8961 38.1718 15.3401 37.3716 15.0956 36.6862C14.843 35.978 14.9797 35.6159 15.0713 35.4906Z"
+                      fill="white" />
+                    <path
+                      d="M29.0228 38.0703C29.0158 37.6799 29.0058 37.3099 28.9962 36.9578C28.9597 35.6127 28.9303 34.5283 29.1032 33.5625C29.2937 32.4982 29.6944 31.817 30.6032 31.3338C31.512 30.8506 32.3009 30.8993 33.2897 31.3365C34.1871 31.7332 35.0696 32.364 36.1644 33.1464C36.4509 33.3513 36.7521 33.5665 37.0718 33.7906C38.1917 34.5757 39.2405 35.1803 40.0717 35.6594C40.3424 35.8155 40.59 35.9582 40.8095 36.0895C41.7968 36.6804 42.1387 37.0012 42.2906 37.287C42.5409 37.7579 42.5549 38.0449 42.5378 38.1976C42.5202 38.3553 42.4509 38.5315 42.2758 38.7463C41.8689 39.2456 41.1684 39.6424 40.4269 40.0366C39.9549 40.2876 39.614 40.3966 39.0823 40.5665C39.0136 40.5885 38.9417 40.6115 38.866 40.6359C38.1809 40.8569 37.3632 41.146 36.1605 41.7855C34.9578 42.425 34.2608 42.9412 33.6945 43.3856C33.6319 43.4347 33.5727 43.4815 33.5161 43.5261C33.0779 43.8719 32.7968 44.0936 32.3248 44.3446C31.5834 44.7388 30.8627 45.0977 30.2212 45.1559C29.9453 45.1809 29.7604 45.1398 29.6198 45.0662C29.4837 44.995 29.2536 44.8229 29.0031 44.3521C28.8512 44.0664 28.7763 43.6035 28.8386 42.4545C28.8525 42.1992 28.8726 41.9141 28.8946 41.6024C28.9622 40.6454 29.0474 39.4378 29.0228 38.0703Z"
+                      fill="white" />
+                  </g>
+                </g>
               </g>
               <defs>
-              <linearGradient id="paint0_linear_3460_722329" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white" stop-opacity="0.3381"/>
-              <stop offset="0.5355" stop-color="white" stop-opacity="0"/>
-              <stop offset="1" stop-color="white" stop-opacity="0"/>
-              </linearGradient>
-              <clipPath id="clip0_3460_722329">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
-              <clipPath id="clip1_3460_722329">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
+                <linearGradient id="paint0_linear_3460_722329" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.3381" />
+                  <stop offset="0.5355" stop-color="white" stop-opacity="0" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <clipPath id="clip0_3460_722329">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_3460_722329">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
               </defs>
-              </svg>
-              
+            </svg>
+
             <h3 class="technologies__item-title">
               Электронный ошейник для питомца
             </h3>
             <p class="technologies__item-description">
-              Лучшее решение для быстрой идентификации и возврата
+              Лучшее решение для быстрой идентификации и&nbsp;возврата
               потерявшегося животного
             </p>
           </li>
           <li class="technologies__item">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_3460_722347)">
-              <g clip-path="url(#clip1_3460_722347)">
-              <mask id="mask0_3460_722347" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#FF3333"/>
-              </mask>
-              <g mask="url(#mask0_3460_722347)">
-              <path d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z" fill="url(#paint0_linear_3460_722347)"/>
-              <path d="M13.6417 16.8965C16.4435 12.8181 21.5242 12.4342 25.3329 15.0477C27.3246 10.88 31.8628 8.72147 36.3822 10.8032C40.9016 12.8849 42.7504 17.9882 40.8807 22.4249C40.6028 23.0844 40.2001 23.8934 39.716 24.7928C39.5866 25.0332 39.2438 25.0412 39.0881 24.817C37.1815 22.0719 33.9613 20.4756 30.1973 21.174C24.8369 22.1685 21.3709 27.0048 22.0955 32.2598C22.1517 32.6671 21.7217 32.9781 21.3622 32.7784C19.013 31.4736 16.8299 30.175 15.5567 29.2104C11.7192 26.303 10.8398 20.9749 13.6417 16.8965Z" fill="white"/>
-              <path d="M40.0141 29.5226C39.7764 28.2454 39.2999 27.0646 38.6295 26.0473C38.59 25.9874 38.5498 25.928 38.509 25.8693C36.7786 23.3778 33.856 21.929 30.4398 22.5629C25.5747 23.4656 22.429 27.8549 23.0867 32.6243C23.1486 33.0733 23.2433 33.5932 23.3641 34.1666L23.3722 34.205C24.2883 38.5298 26.6668 45.8523 27.6581 48.8331C27.8118 49.2952 27.8887 49.5263 28.0408 49.6874C28.1734 49.8278 28.3496 49.9295 28.5374 49.9741C28.753 50.0253 28.9916 49.9763 29.4686 49.8784C32.9645 49.1605 42.2089 47.1912 45.7916 45.7329C50.2508 43.9178 52.5521 39.0019 50.8284 34.3342C49.1047 29.6666 44.3694 27.9839 40.0141 29.5226Z" fill="white"/>
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="url(#paint1_linear_3460_722347)"/>
-              </g>
-              </g>
+                <g clip-path="url(#clip1_3460_722347)">
+                  <mask id="mask0_3460_722347" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                    width="60" height="60">
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="#FF3333" />
+                  </mask>
+                  <g mask="url(#mask0_3460_722347)">
+                    <path
+                      d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z"
+                      fill="url(#paint0_linear_3460_722347)" />
+                    <path
+                      d="M13.6417 16.8965C16.4435 12.8181 21.5242 12.4342 25.3329 15.0477C27.3246 10.88 31.8628 8.72147 36.3822 10.8032C40.9016 12.8849 42.7504 17.9882 40.8807 22.4249C40.6028 23.0844 40.2001 23.8934 39.716 24.7928C39.5866 25.0332 39.2438 25.0412 39.0881 24.817C37.1815 22.0719 33.9613 20.4756 30.1973 21.174C24.8369 22.1685 21.3709 27.0048 22.0955 32.2598C22.1517 32.6671 21.7217 32.9781 21.3622 32.7784C19.013 31.4736 16.8299 30.175 15.5567 29.2104C11.7192 26.303 10.8398 20.9749 13.6417 16.8965Z"
+                      fill="white" />
+                    <path
+                      d="M40.0141 29.5226C39.7764 28.2454 39.2999 27.0646 38.6295 26.0473C38.59 25.9874 38.5498 25.928 38.509 25.8693C36.7786 23.3778 33.856 21.929 30.4398 22.5629C25.5747 23.4656 22.429 27.8549 23.0867 32.6243C23.1486 33.0733 23.2433 33.5932 23.3641 34.1666L23.3722 34.205C24.2883 38.5298 26.6668 45.8523 27.6581 48.8331C27.8118 49.2952 27.8887 49.5263 28.0408 49.6874C28.1734 49.8278 28.3496 49.9295 28.5374 49.9741C28.753 50.0253 28.9916 49.9763 29.4686 49.8784C32.9645 49.1605 42.2089 47.1912 45.7916 45.7329C50.2508 43.9178 52.5521 39.0019 50.8284 34.3342C49.1047 29.6666 44.3694 27.9839 40.0141 29.5226Z"
+                      fill="white" />
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="url(#paint1_linear_3460_722347)" />
+                  </g>
+                </g>
               </g>
               <defs>
-              <linearGradient id="paint0_linear_3460_722347" x1="-59.7052" y1="-14.2188" x2="8.84284" y2="66.5791" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#FFDA3E"/>
-              <stop offset="1" stop-color="#FC4714"/>
-              </linearGradient>
-              <linearGradient id="paint1_linear_3460_722347" x1="49.1794" y1="2.54737" x2="10.4649" y2="57.9619" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white" stop-opacity="0.3381"/>
-              <stop offset="0.5355" stop-color="white" stop-opacity="0"/>
-              <stop offset="1" stop-color="white" stop-opacity="0"/>
-              </linearGradient>
-              <clipPath id="clip0_3460_722347">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
-              <clipPath id="clip1_3460_722347">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
+                <linearGradient id="paint0_linear_3460_722347" x1="-59.7052" y1="-14.2188" x2="8.84284" y2="66.5791"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFDA3E" />
+                  <stop offset="1" stop-color="#FC4714" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_3460_722347" x1="49.1794" y1="2.54737" x2="10.4649" y2="57.9619"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.3381" />
+                  <stop offset="0.5355" stop-color="white" stop-opacity="0" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <clipPath id="clip0_3460_722347">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_3460_722347">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
               </defs>
-              </svg>
-              
+            </svg>
+
             <h3 class="technologies__item-title">Цифровые открытки</h3>
             <p class="technologies__item-description">
               Инновационный способ отправлять поздравления, добавляя
-              интерактивные элементы и мультимедиа.
+              интерактивные элементы и&nbsp;мультимедиа.
             </p>
           </li>
           <li class="technologies__item">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_3460_722365)">
-              <g clip-path="url(#clip1_3460_722365)">
-              <g clip-path="url(#clip2_3460_722365)">
-              <mask id="mask0_3460_722365" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#FF3333"/>
-              </mask>
-              <g mask="url(#mask0_3460_722365)">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#367AFE"/>
-              <path d="M41.6056 32.1656C40.3411 36.8848 37.0441 40.2308 33.5441 40.9218L26.3285 67.8507L20.996 66.4219L28.2116 39.493C25.526 37.1445 24.3437 32.5984 25.6082 27.8791C27.2423 21.8873 32.1224 17.9654 36.5217 19.1441C40.9476 20.3301 43.213 26.1666 41.6056 32.1656ZM47.1866 22.0018L34.3272 69.994L39.6596 71.4228L45.3749 50.093L50.7074 51.5218L54.9939 35.5244C56.2513 30.8318 54.5454 23.9736 47.1866 22.0018ZM23.9371 15.7721C22.8706 15.4863 21.7888 16.1109 21.503 17.1774L19.1597 25.9227L16.9201 25.3226L19.2634 16.5773C19.5491 15.5108 18.9246 14.429 17.8581 14.1432C16.7916 13.8575 15.7098 14.4821 15.424 15.5486L13.0807 24.2938L10.8411 23.6937L13.1844 14.9484C13.4701 13.882 12.8456 12.8001 11.7791 12.5144C10.7126 12.2286 9.63076 12.8532 9.345 13.9197L5.57289 27.9974C4.78703 30.9302 6.54367 33.9728 9.47652 34.7587L2.33237 61.421L7.66484 62.8498L14.809 36.1875C17.7418 36.9734 20.7844 35.2167 21.5703 32.2839L25.3424 18.2062C25.6282 17.1397 25.0036 16.0579 23.9371 15.7721Z" fill="white"/>
-              <path d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z" fill="url(#paint0_linear_3460_722365)"/>
-              </g>
-              </g>
-              </g>
+                <g clip-path="url(#clip1_3460_722365)">
+                  <g clip-path="url(#clip2_3460_722365)">
+                    <mask id="mask0_3460_722365" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                      width="60" height="60">
+                      <path
+                        d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                        fill="#FF3333" />
+                    </mask>
+                    <g mask="url(#mask0_3460_722365)">
+                      <path
+                        d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                        fill="#367AFE" />
+                      <path
+                        d="M41.6056 32.1656C40.3411 36.8848 37.0441 40.2308 33.5441 40.9218L26.3285 67.8507L20.996 66.4219L28.2116 39.493C25.526 37.1445 24.3437 32.5984 25.6082 27.8791C27.2423 21.8873 32.1224 17.9654 36.5217 19.1441C40.9476 20.3301 43.213 26.1666 41.6056 32.1656ZM47.1866 22.0018L34.3272 69.994L39.6596 71.4228L45.3749 50.093L50.7074 51.5218L54.9939 35.5244C56.2513 30.8318 54.5454 23.9736 47.1866 22.0018ZM23.9371 15.7721C22.8706 15.4863 21.7888 16.1109 21.503 17.1774L19.1597 25.9227L16.9201 25.3226L19.2634 16.5773C19.5491 15.5108 18.9246 14.429 17.8581 14.1432C16.7916 13.8575 15.7098 14.4821 15.424 15.5486L13.0807 24.2938L10.8411 23.6937L13.1844 14.9484C13.4701 13.882 12.8456 12.8001 11.7791 12.5144C10.7126 12.2286 9.63076 12.8532 9.345 13.9197L5.57289 27.9974C4.78703 30.9302 6.54367 33.9728 9.47652 34.7587L2.33237 61.421L7.66484 62.8498L14.809 36.1875C17.7418 36.9734 20.7844 35.2167 21.5703 32.2839L25.3424 18.2062C25.6282 17.1397 25.0036 16.0579 23.9371 15.7721Z"
+                        fill="white" />
+                      <path
+                        d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z"
+                        fill="url(#paint0_linear_3460_722365)" />
+                    </g>
+                  </g>
+                </g>
               </g>
               <defs>
-              <linearGradient id="paint0_linear_3460_722365" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white" stop-opacity="0.3381"/>
-              <stop offset="0.5355" stop-color="white" stop-opacity="0"/>
-              <stop offset="1" stop-color="white" stop-opacity="0"/>
-              </linearGradient>
-              <clipPath id="clip0_3460_722365">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
-              <clipPath id="clip1_3460_722365">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
-              <clipPath id="clip2_3460_722365">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
+                <linearGradient id="paint0_linear_3460_722365" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.3381" />
+                  <stop offset="0.5355" stop-color="white" stop-opacity="0" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <clipPath id="clip0_3460_722365">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_3460_722365">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
+                <clipPath id="clip2_3460_722365">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
               </defs>
-              </svg>
-              
+            </svg>
+
             <div class="technologies__item-badge">
               <svg class="technologies__item-badge-icon" width="17" height="15" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-union"></use>
@@ -335,89 +616,112 @@
               <span class="technologies__item-badge-text">БИЗНЕС</span>
             </div>
             <h3 class="technologies__item-title">
-              Электронное меню для ресторанов и кафе
+              Электронное меню для ресторанов и&nbsp;кафе
             </h3>
             <p class="technologies__item-description">
-              Удобное решение для ресторанов и кафе, позволяющее посетителям
-              просматривать меню и делать заказы с помощью NFC и QR-кодов.
+              Удобное решение для ресторанов и&nbsp;кафе, позволяющее посетителям
+              просматривать меню и&nbsp;делать заказы с&nbsp;помощью NFC и&nbsp;QR-кодов.
             </p>
           </li>
           <li class="technologies__item">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_3460_722387)">
-              <g clip-path="url(#clip1_3460_722387)">
-              <mask id="mask0_3460_722387" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#FF3333"/>
-              </mask>
-              <g mask="url(#mask0_3460_722387)">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="url(#paint0_linear_3460_722387)"/>
-              <path d="M36.4378 35.8404V22.944C36.4378 20.2684 35.7243 17.8426 34.2973 15.6664C32.906 13.4903 31.0687 12.4022 28.7856 12.4022C27.751 12.4022 26.877 12.7411 26.1635 13.4189C25.4857 14.0968 25.0041 14.9886 24.7187 16.0945C24.2192 17.8069 23.9695 19.5728 23.9695 21.3922V37.4457C23.9695 40.5851 24.4333 42.9039 25.3608 44.4023C26.324 45.9006 27.5726 46.6498 29.1066 46.6498C31.3541 46.6498 33.1379 45.5795 34.4578 43.4391C35.7778 41.2986 36.4378 38.7657 36.4378 35.8404ZM44.9996 47.9876H36.4913V42.1013C35.6708 44.2417 34.4935 45.8471 32.9595 46.9173C31.4255 47.9876 29.8201 48.5227 28.1434 48.5227C24.2906 48.5227 21.2226 47.3276 18.9394 44.9374C16.6562 42.5115 15.5146 39.1224 15.5146 34.7701V24.1213C15.5146 19.7333 16.7811 16.3799 19.314 14.0611C21.8469 11.7066 24.8257 10.5293 28.2505 10.5293C30.2482 10.5293 31.9784 11.1893 33.4411 12.5092C34.9038 13.7935 35.9205 15.3632 36.4913 17.2183V11.0644H44.9996V47.9876Z" fill="white"/>
-              <path d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z" fill="url(#paint1_linear_3460_722387)"/>
-              </g>
-              </g>
+                <g clip-path="url(#clip1_3460_722387)">
+                  <mask id="mask0_3460_722387" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                    width="60" height="60">
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="#FF3333" />
+                  </mask>
+                  <g mask="url(#mask0_3460_722387)">
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="url(#paint0_linear_3460_722387)" />
+                    <path
+                      d="M36.4378 35.8404V22.944C36.4378 20.2684 35.7243 17.8426 34.2973 15.6664C32.906 13.4903 31.0687 12.4022 28.7856 12.4022C27.751 12.4022 26.877 12.7411 26.1635 13.4189C25.4857 14.0968 25.0041 14.9886 24.7187 16.0945C24.2192 17.8069 23.9695 19.5728 23.9695 21.3922V37.4457C23.9695 40.5851 24.4333 42.9039 25.3608 44.4023C26.324 45.9006 27.5726 46.6498 29.1066 46.6498C31.3541 46.6498 33.1379 45.5795 34.4578 43.4391C35.7778 41.2986 36.4378 38.7657 36.4378 35.8404ZM44.9996 47.9876H36.4913V42.1013C35.6708 44.2417 34.4935 45.8471 32.9595 46.9173C31.4255 47.9876 29.8201 48.5227 28.1434 48.5227C24.2906 48.5227 21.2226 47.3276 18.9394 44.9374C16.6562 42.5115 15.5146 39.1224 15.5146 34.7701V24.1213C15.5146 19.7333 16.7811 16.3799 19.314 14.0611C21.8469 11.7066 24.8257 10.5293 28.2505 10.5293C30.2482 10.5293 31.9784 11.1893 33.4411 12.5092C34.9038 13.7935 35.9205 15.3632 36.4913 17.2183V11.0644H44.9996V47.9876Z"
+                      fill="white" />
+                    <path
+                      d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z"
+                      fill="url(#paint1_linear_3460_722387)" />
+                  </g>
+                </g>
               </g>
               <defs>
-              <linearGradient id="paint0_linear_3460_722387" x1="3.5" y1="85" x2="49" y2="-13.5" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#1E164B"/>
-              <stop offset="1" stop-color="#4E219C"/>
-              </linearGradient>
-              <linearGradient id="paint1_linear_3460_722387" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white" stop-opacity="0.3381"/>
-              <stop offset="0.5355" stop-color="white" stop-opacity="0"/>
-              <stop offset="1" stop-color="white" stop-opacity="0"/>
-              </linearGradient>
-              <clipPath id="clip0_3460_722387">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
-              <clipPath id="clip1_3460_722387">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
+                <linearGradient id="paint0_linear_3460_722387" x1="3.5" y1="85" x2="49" y2="-13.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#1E164B" />
+                  <stop offset="1" stop-color="#4E219C" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_3460_722387" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.3381" />
+                  <stop offset="0.5355" stop-color="white" stop-opacity="0" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <clipPath id="clip0_3460_722387">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_3460_722387">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
               </defs>
-              </svg>
-              
+            </svg>
+
             <div class="technologies__item-badge">
               <svg class="technologies__item-badge-icon" width="17" height="15" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-union"></use>
               </svg>
               <span class="technologies__item-badge-text">БИЗНЕС</span>
             </div>
-            <h3 class="technologies__item-title">Афиши кино и театров</h3>
+            <h3 class="technologies__item-title">Афиши кино и&nbsp;театров</h3>
             <p class="technologies__item-description">
               Интерактивное решение для представления информации о
-              мероприятиях, обеспечивающее мгновенный доступ и удобство
+              мероприятиях, обеспечивающее мгновенный доступ и&nbsp;удобство
               взаимодействия.
             </p>
           </li>
           <li class="technologies__item">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_3460_722409)">
-              <g clip-path="url(#clip1_3460_722409)">
-              <mask id="mask0_3460_722409" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#FF3333"/>
-              </mask>
-              <g mask="url(#mask0_3460_722409)">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#012B5B"/>
-              <path d="M48.2 24.4H40.4V21.8C40.4 19.7313 39.5782 17.7474 38.1154 16.2846C36.6526 14.8218 34.6687 14 32.6 14H27.4C25.3313 14 23.3473 14.8218 21.8846 16.2846C20.4218 17.7474 19.6 19.7313 19.6 21.8V24.4H11.8C9.73131 24.4 7.74735 25.2218 6.28457 26.6846C4.82178 28.1474 4 30.1313 4 32.2V55.6C4 57.6687 4.82178 59.6527 6.28457 61.1154C7.74735 62.5782 9.73131 63.4 11.8 63.4H48.2C50.2687 63.4 52.2526 62.5782 53.7154 61.1154C55.1782 59.6527 56 57.6687 56 55.6V32.2C56 30.1313 55.1782 28.1474 53.7154 26.6846C52.2526 25.2218 50.2687 24.4 48.2 24.4ZM24.8 21.8C24.8 21.1104 25.0739 20.4491 25.5615 19.9615C26.0491 19.4739 26.7104 19.2 27.4 19.2H32.6C33.2896 19.2 33.9509 19.4739 34.4385 19.9615C34.9261 20.4491 35.2 21.1104 35.2 21.8V24.4H24.8V21.8ZM50.8 55.6C50.8 56.2896 50.5261 56.9509 50.0385 57.4385C49.5509 57.9261 48.8896 58.2 48.2 58.2H11.8C11.1104 58.2 10.4491 57.9261 9.96152 57.4385C9.47393 56.9509 9.2 56.2896 9.2 55.6V41.3C15.8203 43.9264 22.8778 45.2761 30 45.278C37.122 45.2736 44.179 43.924 50.8 41.3V55.6ZM50.8 35.606C44.2438 38.4862 37.1609 39.9734 30 39.9734C22.8391 39.9734 15.7562 38.4862 9.2 35.606V32.2C9.2 31.5104 9.47393 30.8491 9.96152 30.3615C10.4491 29.8739 11.1104 29.6 11.8 29.6H48.2C48.8896 29.6 49.5509 29.8739 50.0385 30.3615C50.5261 30.8491 50.8 31.5104 50.8 32.2V35.606Z" fill="white"/>
-              <path d="M50.8 55.6C50.8 56.2896 50.5261 56.9509 50.0385 57.4385C49.5509 57.9261 48.8896 58.2 48.2 58.2H11.8C11.1104 58.2 10.4491 57.9261 9.96152 57.4385C9.47393 56.9509 9.2 56.2896 9.2 55.6V41.3C15.8203 43.9264 22.8778 45.2761 30 45.278C37.122 45.2736 44.179 43.924 50.8 41.3V55.6Z" fill="white"/>
-              <path d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z" fill="url(#paint0_linear_3460_722409)"/>
-              </g>
-              </g>
+                <g clip-path="url(#clip1_3460_722409)">
+                  <mask id="mask0_3460_722409" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                    width="60" height="60">
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="#FF3333" />
+                  </mask>
+                  <g mask="url(#mask0_3460_722409)">
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="#012B5B" />
+                    <path
+                      d="M48.2 24.4H40.4V21.8C40.4 19.7313 39.5782 17.7474 38.1154 16.2846C36.6526 14.8218 34.6687 14 32.6 14H27.4C25.3313 14 23.3473 14.8218 21.8846 16.2846C20.4218 17.7474 19.6 19.7313 19.6 21.8V24.4H11.8C9.73131 24.4 7.74735 25.2218 6.28457 26.6846C4.82178 28.1474 4 30.1313 4 32.2V55.6C4 57.6687 4.82178 59.6527 6.28457 61.1154C7.74735 62.5782 9.73131 63.4 11.8 63.4H48.2C50.2687 63.4 52.2526 62.5782 53.7154 61.1154C55.1782 59.6527 56 57.6687 56 55.6V32.2C56 30.1313 55.1782 28.1474 53.7154 26.6846C52.2526 25.2218 50.2687 24.4 48.2 24.4ZM24.8 21.8C24.8 21.1104 25.0739 20.4491 25.5615 19.9615C26.0491 19.4739 26.7104 19.2 27.4 19.2H32.6C33.2896 19.2 33.9509 19.4739 34.4385 19.9615C34.9261 20.4491 35.2 21.1104 35.2 21.8V24.4H24.8V21.8ZM50.8 55.6C50.8 56.2896 50.5261 56.9509 50.0385 57.4385C49.5509 57.9261 48.8896 58.2 48.2 58.2H11.8C11.1104 58.2 10.4491 57.9261 9.96152 57.4385C9.47393 56.9509 9.2 56.2896 9.2 55.6V41.3C15.8203 43.9264 22.8778 45.2761 30 45.278C37.122 45.2736 44.179 43.924 50.8 41.3V55.6ZM50.8 35.606C44.2438 38.4862 37.1609 39.9734 30 39.9734C22.8391 39.9734 15.7562 38.4862 9.2 35.606V32.2C9.2 31.5104 9.47393 30.8491 9.96152 30.3615C10.4491 29.8739 11.1104 29.6 11.8 29.6H48.2C48.8896 29.6 49.5509 29.8739 50.0385 30.3615C50.5261 30.8491 50.8 31.5104 50.8 32.2V35.606Z"
+                      fill="white" />
+                    <path
+                      d="M50.8 55.6C50.8 56.2896 50.5261 56.9509 50.0385 57.4385C49.5509 57.9261 48.8896 58.2 48.2 58.2H11.8C11.1104 58.2 10.4491 57.9261 9.96152 57.4385C9.47393 56.9509 9.2 56.2896 9.2 55.6V41.3C15.8203 43.9264 22.8778 45.2761 30 45.278C37.122 45.2736 44.179 43.924 50.8 41.3V55.6Z"
+                      fill="white" />
+                    <path
+                      d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z"
+                      fill="url(#paint0_linear_3460_722409)" />
+                  </g>
+                </g>
               </g>
               <defs>
-              <linearGradient id="paint0_linear_3460_722409" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white" stop-opacity="0.3381"/>
-              <stop offset="0.5355" stop-color="white" stop-opacity="0"/>
-              <stop offset="1" stop-color="white" stop-opacity="0"/>
-              </linearGradient>
-              <clipPath id="clip0_3460_722409">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
-              <clipPath id="clip1_3460_722409">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
+                <linearGradient id="paint0_linear_3460_722409" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.3381" />
+                  <stop offset="0.5355" stop-color="white" stop-opacity="0" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <clipPath id="clip0_3460_722409">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_3460_722409">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
               </defs>
-              </svg>
-              
+            </svg>
+
             <div class="technologies__item-badge">
               <svg class="technologies__item-badge-icon" width="17" height="15" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-union"></use>
@@ -426,82 +730,104 @@
             </div>
             <h3 class="technologies__item-title">Для компаний</h3>
             <p class="technologies__item-description">
-              Эффективно передавайте данные о компании, её услугах и
-              сотрудниках с помощью NFC и QR-кодов.
+              Эффективно передавайте данные о&nbsp;компании, её&nbsp;услугах и
+              сотрудниках с&nbsp;помощью NFC и&nbsp;QR-кодов.
             </p>
           </li>
           <li class="technologies__item">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_3460_722431)">
-              <g clip-path="url(#clip1_3460_722431)">
-              <mask id="mask0_3460_722431" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#FF3333"/>
-              </mask>
-              <g mask="url(#mask0_3460_722431)">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="url(#paint0_linear_3460_722431)"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M46.4264 27.2943L30.1245 10.9924C29.3892 10.2571 29.0215 9.88944 28.5925 9.62651C28.2121 9.39341 27.7974 9.22162 27.3636 9.11747C26.8743 9 26.3543 9 25.3144 9H19.258C18.2181 9 17.6981 9 17.2088 9.11747C16.775 9.22162 16.3603 9.3934 15.9799 9.62651C15.5508 9.88944 15.1832 10.2571 14.4479 10.9924L10.9924 14.4479C10.2571 15.1832 9.88944 15.5508 9.62651 15.9799C9.3934 16.3603 9.22162 16.775 9.11747 17.2088C9 17.6981 9 18.2181 9 19.258V25.3144C9 26.3543 9 26.8743 9.11747 27.3636C9.22162 27.7974 9.3934 28.2121 9.62651 28.5925C9.88944 29.0215 10.2571 29.3892 10.9924 30.1245L27.2943 46.4264C29.8199 48.952 31.0826 50.2147 32.5388 50.6879C33.8196 51.104 35.1993 51.104 36.4802 50.6879C37.9363 50.2147 39.1991 48.952 41.7247 46.4264L46.4264 41.7247C48.952 39.1991 50.2147 37.9363 50.6879 36.4802C51.104 35.1993 51.104 33.8196 50.6879 32.5388C50.2147 31.0826 48.9519 29.8198 46.4264 27.2943ZM21.7547 18.5661C19.9937 18.5661 18.5661 19.9937 18.5661 21.7547C18.5661 23.5158 19.9937 24.9434 21.7547 24.9434C23.5158 24.9434 24.9434 23.5158 24.9434 21.7547C24.9434 19.9937 23.5158 18.5661 21.7547 18.5661Z" fill="white"/>
-              <path d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z" fill="url(#paint1_linear_3460_722431)"/>
-              </g>
-              </g>
+                <g clip-path="url(#clip1_3460_722431)">
+                  <mask id="mask0_3460_722431" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                    width="60" height="60">
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="#FF3333" />
+                  </mask>
+                  <g mask="url(#mask0_3460_722431)">
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="url(#paint0_linear_3460_722431)" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M46.4264 27.2943L30.1245 10.9924C29.3892 10.2571 29.0215 9.88944 28.5925 9.62651C28.2121 9.39341 27.7974 9.22162 27.3636 9.11747C26.8743 9 26.3543 9 25.3144 9H19.258C18.2181 9 17.6981 9 17.2088 9.11747C16.775 9.22162 16.3603 9.3934 15.9799 9.62651C15.5508 9.88944 15.1832 10.2571 14.4479 10.9924L10.9924 14.4479C10.2571 15.1832 9.88944 15.5508 9.62651 15.9799C9.3934 16.3603 9.22162 16.775 9.11747 17.2088C9 17.6981 9 18.2181 9 19.258V25.3144C9 26.3543 9 26.8743 9.11747 27.3636C9.22162 27.7974 9.3934 28.2121 9.62651 28.5925C9.88944 29.0215 10.2571 29.3892 10.9924 30.1245L27.2943 46.4264C29.8199 48.952 31.0826 50.2147 32.5388 50.6879C33.8196 51.104 35.1993 51.104 36.4802 50.6879C37.9363 50.2147 39.1991 48.952 41.7247 46.4264L46.4264 41.7247C48.952 39.1991 50.2147 37.9363 50.6879 36.4802C51.104 35.1993 51.104 33.8196 50.6879 32.5388C50.2147 31.0826 48.9519 29.8198 46.4264 27.2943ZM21.7547 18.5661C19.9937 18.5661 18.5661 19.9937 18.5661 21.7547C18.5661 23.5158 19.9937 24.9434 21.7547 24.9434C23.5158 24.9434 24.9434 23.5158 24.9434 21.7547C24.9434 19.9937 23.5158 18.5661 21.7547 18.5661Z"
+                      fill="white" />
+                    <path
+                      d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z"
+                      fill="url(#paint1_linear_3460_722431)" />
+                  </g>
+                </g>
               </g>
               <defs>
-              <linearGradient id="paint0_linear_3460_722431" x1="22.5" y1="-16" x2="54.5" y2="79" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#F03C3C"/>
-              <stop offset="1" stop-color="#E02D2D"/>
-              </linearGradient>
-              <linearGradient id="paint1_linear_3460_722431" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white" stop-opacity="0.3381"/>
-              <stop offset="0.5355" stop-color="white" stop-opacity="0"/>
-              <stop offset="1" stop-color="white" stop-opacity="0"/>
-              </linearGradient>
-              <clipPath id="clip0_3460_722431">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
-              <clipPath id="clip1_3460_722431">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
+                <linearGradient id="paint0_linear_3460_722431" x1="22.5" y1="-16" x2="54.5" y2="79"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#F03C3C" />
+                  <stop offset="1" stop-color="#E02D2D" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_3460_722431" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.3381" />
+                  <stop offset="0.5355" stop-color="white" stop-opacity="0" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <clipPath id="clip0_3460_722431">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_3460_722431">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
               </defs>
-              </svg>
-              
+            </svg>
+
             <h3 class="technologies__item-title">Стикер для оплаты</h3>
             <p class="technologies__item-description">
-              Просто приложите смартфон к стикеру или отсканируйте QR-код для
+              Просто приложите смартфон к&nbsp;стикеру или отсканируйте QR-код для
               моментальной оплаты.
             </p>
           </li>
           <li class="technologies__item">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_3460_722449)">
-              <g clip-path="url(#clip1_3460_722449)">
-              <mask id="mask0_3460_722449" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="#FF3333"/>
-              </mask>
-              <g mask="url(#mask0_3460_722449)">
-              <path d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z" fill="url(#paint0_linear_3460_722449)"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M53.6581 47.4463L51.8316 25.5277C51.494 21.4764 51.3252 19.4507 50.428 17.9175C49.638 16.5674 48.4615 15.4849 47.0505 14.8097C45.4481 14.043 43.4154 14.043 39.3499 14.043H20.6494C16.584 14.043 14.5513 14.043 12.9489 14.8097C11.5378 15.4849 10.3614 16.5674 9.57136 17.9175C8.67419 19.4507 8.50538 21.4764 8.16777 25.5277L6.34122 47.4463C5.94883 52.155 5.75264 54.5093 6.54858 56.3254C7.24789 57.9211 8.45952 59.2379 9.99163 60.0674C11.7354 61.0114 14.0979 61.0114 18.8229 61.0114H41.1765C45.9015 61.0114 48.2639 61.0114 50.0077 60.0674C51.5398 59.2379 52.7515 57.9211 53.4508 56.3254C54.2467 54.5093 54.0505 52.1549 53.6581 47.4463ZM22.1716 27.0896C22.1716 25.6485 21.0034 24.4803 19.5622 24.4803C18.1211 24.4803 16.9529 25.6485 16.9529 27.0896C16.9529 30.5499 18.3275 33.8684 20.7742 36.3151C23.2209 38.7618 26.5394 40.1364 29.9997 40.1364C33.4599 40.1364 36.7784 38.7618 39.2251 36.3151C41.6719 33.8684 43.0464 30.5499 43.0464 27.0896C43.0464 25.6485 41.8782 24.4803 40.4371 24.4803C38.996 24.4803 37.8277 25.6485 37.8277 27.0896C37.8277 29.1658 37.003 31.1569 35.5349 32.6249C34.0669 34.093 32.0758 34.9177 29.9997 34.9177C27.9235 34.9177 25.9324 34.093 24.4644 32.6249C22.9963 31.1569 22.1716 29.1658 22.1716 27.0896Z" fill="white"/>
-              <path d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z" fill="url(#paint1_linear_3460_722449)"/>
-              </g>
-              </g>
+                <g clip-path="url(#clip1_3460_722449)">
+                  <mask id="mask0_3460_722449" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                    width="60" height="60">
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="#FF3333" />
+                  </mask>
+                  <g mask="url(#mask0_3460_722449)">
+                    <path
+                      d="M0 30C0 19.499 0 14.2485 2.04363 10.2377C3.84126 6.70963 6.70963 3.84126 10.2377 2.04363C14.2485 0 19.499 0 30 0C40.501 0 45.7515 0 49.7624 2.04363C53.2904 3.84126 56.1588 6.70963 57.9564 10.2377C60 14.2485 60 19.499 60 30C60 40.501 60 45.7515 57.9564 49.7624C56.1588 53.2904 53.2904 56.1588 49.7624 57.9564C45.7515 60 40.501 60 30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70963 56.1588 3.84126 53.2904 2.04363 49.7624C0 45.7515 0 40.501 0 30Z"
+                      fill="url(#paint0_linear_3460_722449)" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M53.6581 47.4463L51.8316 25.5277C51.494 21.4764 51.3252 19.4507 50.428 17.9175C49.638 16.5674 48.4615 15.4849 47.0505 14.8097C45.4481 14.043 43.4154 14.043 39.3499 14.043H20.6494C16.584 14.043 14.5513 14.043 12.9489 14.8097C11.5378 15.4849 10.3614 16.5674 9.57136 17.9175C8.67419 19.4507 8.50538 21.4764 8.16777 25.5277L6.34122 47.4463C5.94883 52.155 5.75264 54.5093 6.54858 56.3254C7.24789 57.9211 8.45952 59.2379 9.99163 60.0674C11.7354 61.0114 14.0979 61.0114 18.8229 61.0114H41.1765C45.9015 61.0114 48.2639 61.0114 50.0077 60.0674C51.5398 59.2379 52.7515 57.9211 53.4508 56.3254C54.2467 54.5093 54.0505 52.1549 53.6581 47.4463ZM22.1716 27.0896C22.1716 25.6485 21.0034 24.4803 19.5622 24.4803C18.1211 24.4803 16.9529 25.6485 16.9529 27.0896C16.9529 30.5499 18.3275 33.8684 20.7742 36.3151C23.2209 38.7618 26.5394 40.1364 29.9997 40.1364C33.4599 40.1364 36.7784 38.7618 39.2251 36.3151C41.6719 33.8684 43.0464 30.5499 43.0464 27.0896C43.0464 25.6485 41.8782 24.4803 40.4371 24.4803C38.996 24.4803 37.8277 25.6485 37.8277 27.0896C37.8277 29.1658 37.003 31.1569 35.5349 32.6249C34.0669 34.093 32.0758 34.9177 29.9997 34.9177C27.9235 34.9177 25.9324 34.093 24.4644 32.6249C22.9963 31.1569 22.1716 29.1658 22.1716 27.0896Z"
+                      fill="white" />
+                    <path
+                      d="M30 60C19.499 60 14.2485 60 10.2377 57.9564C6.70964 56.1587 3.84126 53.2904 2.04363 49.7623C0 45.7515 0 40.501 0 30C0 19.4989 0 14.2485 2.04363 10.2376C3.84126 6.70964 6.70964 3.84119 10.2377 2.04359C14.2485 -1.43051e-05 19.499 -1.43051e-05 30 -1.43051e-05C40.5011 -1.43051e-05 45.7515 -1.43051e-05 49.7624 2.04359C53.2904 3.84119 56.1588 6.70964 57.9564 10.2376C60 14.2485 60 19.4989 60 30C60 40.501 60 45.7515 57.9564 49.7623C56.1588 53.2904 53.2904 56.1587 49.7624 57.9564C45.7515 60 40.5011 60 30 60Z"
+                      fill="url(#paint1_linear_3460_722449)" />
+                  </g>
+                </g>
               </g>
               <defs>
-              <linearGradient id="paint0_linear_3460_722449" x1="51.5" y1="-15.5" x2="7.5" y2="71.5" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#39DBDB"/>
-              <stop offset="1" stop-color="#45DCAF"/>
-              </linearGradient>
-              <linearGradient id="paint1_linear_3460_722449" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white" stop-opacity="0.3381"/>
-              <stop offset="0.5355" stop-color="white" stop-opacity="0"/>
-              <stop offset="1" stop-color="white" stop-opacity="0"/>
-              </linearGradient>
-              <clipPath id="clip0_3460_722449">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
-              <clipPath id="clip1_3460_722449">
-              <rect width="60" height="60" fill="white"/>
-              </clipPath>
+                <linearGradient id="paint0_linear_3460_722449" x1="51.5" y1="-15.5" x2="7.5" y2="71.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#39DBDB" />
+                  <stop offset="1" stop-color="#45DCAF" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_3460_722449" x1="2.54737" y1="10.8205" x2="57.962" y2="49.5351"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.3381" />
+                  <stop offset="0.5355" stop-color="white" stop-opacity="0" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+                <clipPath id="clip0_3460_722449">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_3460_722449">
+                  <rect width="60" height="60" fill="white" />
+                </clipPath>
               </defs>
-              </svg>
-              
+            </svg>
+
             <div class="technologies__item-badge">
               <svg class="technologies__item-badge-icon" width="17" height="15" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-union"></use>
@@ -510,7 +836,7 @@
             </div>
             <h3 class="technologies__item-title">Магазин-визитка</h3>
             <p class="technologies__item-description">
-              Демонстрируйте товары и услуги компании, обновляйте информацию в
+              Демонстрируйте товары и&nbsp;услуги компании, обновляйте информацию в
               реальном времени
             </p>
           </li>
@@ -524,11 +850,11 @@
             <picture>
               <source media="(max-width: 639px)" srcset="images/plus/plus-mobile.png" />
               <source media="(max-width: 1023px)" srcset="images/plus/plus-tablet.png" />
-            <img class="plus__image" src="images/plus/plus.png" alt="карты с плюсом" />
+              <img class="plus__image" src="images/plus/plus.png" alt="карты с плюсом" />
             </picture>
-            <p class="plus__title">С Плюсом вы будете всегда в плюсе</p>
+            <p class="plus__title">С&nbsp;Плюсом вы&nbsp;будете всегда в&nbsp;плюсе</p>
             <p class="plus__description">
-              Приобретайте подписку Плюс и улучшайте свою визитку еще лучше
+              Приобретайте подписку Плюс и&nbsp;улучшайте свою визитку еще лучше
             </p>
           </div>
           <div class="plus__right-container">
@@ -550,10 +876,10 @@
     <section class="create">
       <div class="container">
         <h2 class="create__title">
-          Создавайте уникальные визитки, которые будут только у вас
+          Создавайте уникальные визитки, которые будут только у&nbsp;вас
         </h2>
         <p class="create__description">
-          Выбирайте дизайн из большой библиотеки или создавайте сами
+          Выбирайте дизайн из&nbsp;большой библиотеки или создавайте сами
         </p>
         <form class="create__form" action="#" method="post">
           <div class="create__form-left">
@@ -562,52 +888,52 @@
                 <svg class="create__preview-card-icon" width="50" height="33" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#icon-for-card"></use>
                 </svg>
-                <span class="create__preview-card-title">Как к вам обращаться</span>
+                <span class="create__preview-card-title">Как к&nbsp;вам обращаться</span>
                 <span class="create__preview-card-description">Небольшое описание</span>
               </div>
             </div>
             <fieldset class="create__choice-bg">
               <div class="radio-bg">
-                <input class="radio-bg__input visually-hidden" id="hit" type="radio" name="bg" />
-                <label class="radio-bg__label" for="hit">Хит сезона</label>
+                <input class="radio-bg__input visually-hidden" id="0" type="radio" name="bg" checked />
+                <label class="radio-bg__label" for="0">Хит сезона</label>
                 <svg class="radio-bg__icon" width="12" height="9" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#icon-check"></use>
                 </svg>
               </div>
               <div class="radio-bg">
-                <input class="radio-bg__input visually-hidden" id="abstraction" type="radio" name="bg" />
-                <label class="radio-bg__label" for="abstraction">Абстракция</label>
+                <input class="radio-bg__input visually-hidden" id="1" type="radio" name="bg" />
+                <label class="radio-bg__label" for="1">Абстракция</label>
                 <svg class="radio-bg__icon" width="12" height="9" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#icon-check"></use>
                 </svg>
               </div>
               <div class="radio-bg">
-                <input class="radio-bg__input visually-hidden" id="colors" type="radio" name="bg" />
-                <label class="radio-bg__label" for="colors">Цвета</label>
+                <input class="radio-bg__input visually-hidden" id="2" type="radio" name="bg" />
+                <label class="radio-bg__label" for="2">Цвета</label>
                 <svg class="radio-bg__icon" width="12" height="9" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#icon-check"></use>
                 </svg>
               </div>
-              <div class="radio-bg">
+              <!-- <div class="radio-bg">
                 <input class="radio-bg__input visually-hidden" id="gradient" type="radio" name="bg" />
                 <label class="radio-bg__label" for="gradient">Градиент</label>
                 <svg class="radio-bg__icon" width="12" height="9" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#icon-check"></use>
                 </svg>
-              </div>
-              <div class="radio-bg">
+              </div> -->
+              <!-- <div class="radio-bg">
                 <input class="radio-bg__input visually-hidden" id="mine" type="radio" name="bg" />
                 <label class="radio-bg__label" for="mine">Свой дизайн</label>
                 <svg class="radio-bg__icon" width="12" height="9" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#icon-check"></use>
                 </svg>
-              </div>
+              </div> -->
             </fieldset>
           </div>
           <div class="create__form-right">
             <p class="create__form-title">Посмотрите как это выглядит</p>
             <p class="create__form-description">
-              Выбирайте дизайн из библиотеки или создавайте свой
+              Выбирайте дизайн из&nbsp;библиотеки или создавайте свой
             </p>
             <div class="custom-input">
               <input class="custom-input__field" type="text" name="name" id="name" placeholder="Как к вам обращаться" />
@@ -618,6 +944,13 @@
             </div>
 
             <div class="create__choice-image">
+              <button class="create__list-btn" type="button" id="arrow-left">
+                <svg class="create__list-btn-icon" width="15" height="15" viewBox="0 0 9 6" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1.25L4.5 4.75L8 1.25" stroke="#131314" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
               <ul class="create__list">
                 <li class="create__item">
                   <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
@@ -647,12 +980,38 @@
                   <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
                     alt="фон-визитки" />
                 </li>
-                <!-- <button class="create__list-btn" type="button">
-                  <svg class="plus__advantage-icon" width="9" height="15" aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#icon-arrow"></use>
-                  </svg>
-                </button> -->
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
+                <li class="create__item">
+                  <img class="create__item-image" src="images/create/card-bg.jpg" width="57" height="57"
+                    alt="фон-визитки" />
+                </li>
               </ul>
+              <button class="create__list-btn" type="button" id="arrow-right">
+                <svg class="create__list-btn-icon" width="15" height="15" viewBox="0 0 9 6" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1.25L4.5 4.75L8 1.25" stroke="#131314" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
             </div>
 
             <div class="create__price-container">
@@ -663,9 +1022,9 @@
                   <svg width="16" height="16" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-plus"></use>
                   </svg>
-                  <span class="create__badge-text">ПЛЮС В ПОДАРОК</span>
+                  <span class="create__badge-text">ПЛЮС В&nbsp;ПОДАРОК</span>
                 </div>
-                <span class="create__politic">Расчёт носит информационный характер и не является
+                <span class="create__politic">Расчёт носит информационный характер и&nbsp;не&nbsp;является
                   публичной офертой</span>
                 <button class="create__form-btn" type="submit">
                   Заказать
@@ -683,14 +1042,14 @@
         </h2>
         <p class="tariff__description">
           Виртуальный офис для вашей компании: корпоративная почта, календарь,
-          облачное хранилище, редактор документов и сервисы для коммуникации
+          облачное хранилище, редактор документов и&nbsp;сервисы для коммуникации
         </p>
 
         <ul class="tariff__list">
           <li class="tariff__item">
             <div class="tariff__plan free-plan">
               <p class="tariff__plan-sup-title">
-                Индивидуально для вас и вашего бизнеса
+                Индивидуально для вас и&nbsp;вашего бизнеса
               </p>
               <h3 class="tariff__plan-title">UniTap</h3>
               <ul class="tariff__plan-list">
@@ -714,7 +1073,7 @@
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Защищенное хранение ваших данных по стандарту
+                  <span class="tariff__plan-item-text">Защищенное хранение ваших данных по&nbsp;стандарту
                     152-ФЗ.</span>
                   <br />
                   <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
@@ -723,28 +1082,28 @@
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Данные и хранилище <br /></span>
+                  <span class="tariff__plan-item-text">Данные и&nbsp;хранилище <br /></span>
                   <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                  <span class="tariff__plan-item-text">Данные и&nbsp;хранилище </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Данные и хранилище </span><br />
+                  <span class="tariff__plan-item-text">Данные и&nbsp;хранилище </span> <br />
                   <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Данные и хранилище </span><br />
+                  <span class="tariff__plan-item-text">Данные и&nbsp;хранилище </span> <br />
                   <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item">
@@ -752,26 +1111,26 @@
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
                   <span class="tariff__plan-item-text">
-                    Данные и хранилище </span><br /><span class="tariff__plan-item-sub">Отключение всех
+                    Данные и&nbsp;хранилище </span> <br /><span class="tariff__plan-item-sub">Отключение всех
                     уведомлений</span>
                 </li>
                 <li class="tariff__plan-item">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Данные и хранилище </span><br />
+                  <span class="tariff__plan-item-text">Данные и&nbsp;хранилище </span> <br />
                   <span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
               </ul>
               <p class="tariff__plan-price">Бесплатно</p>
-              <p class="tariff__plan-price-text">Для всех и всегда</p>
+              <p class="tariff__plan-price-text">Для всех и&nbsp;всегда</p>
               <a href="#" class="tariff__plan-link">Хочу попробовать</a>
             </div>
           </li>
           <li class="tariff__item">
             <div class="tariff__plan tariff__plan--plus">
               <p class="tariff__plan-sup-title">
-                Расширенный функционал для вас и вашего бизнеса
+                Расширенный функционал для вас и&nbsp;вашего бизнеса
               </p>
               <h3 class="tariff__plan-title">UniTap Плюс</h3>
               <ul class="tariff__plan-list">
@@ -787,82 +1146,83 @@
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">NFC-карта </span><br /><span
+                  <span class="tariff__plan-item-text">NFC-карта </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--plus">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Дополнительная лицензия администратора на корпоративный
-                    кабинет, в год </span><br /><span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                  <span class="tariff__plan-item-text">Дополнительная лицензия администратора на&nbsp;корпоративный
+                    кабинет, в&nbsp;год </span> <br /><span class="tariff__plan-item-sub">Отключение всех
+                    уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--plus">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Список контактов и выгрузка в CRM </span><br /><span
+                  <span class="tariff__plan-item-text">Список контактов и&nbsp;выгрузка в&nbsp;CRM </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--plus">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Аналитика в мобильном приложении </span><br /><span
+                  <span class="tariff__plan-item-text">Аналитика в&nbsp;мобильном приложении </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--plus">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Выбор цветовой схемы визиток </span><br /><span
+                  <span class="tariff__plan-item-text">Выбор цветовой схемы визиток </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--plus">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Индивидуальный домен </span><br /><span
+                  <span class="tariff__plan-item-text">Индивидуальный домен </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--plus">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Визитки без встроенной рекламы </span><br /><span
+                  <span class="tariff__plan-item-text">Визитки без встроенной рекламы </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--plus">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                  <span class="tariff__plan-item-text">Данные и&nbsp;хранилище </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--plus">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                  <span class="tariff__plan-item-text">Данные и&nbsp;хранилище </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--plus">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                  <span class="tariff__plan-item-text">Данные и&nbsp;хранилище </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
               </ul>
               <p class="tariff__plan-price">129₽</p>
-              <p class="tariff__plan-price-text">в месяц за пользователя</p>
+              <p class="tariff__plan-price-text">в&nbsp;месяц за&nbsp;пользователя</p>
               <div class="tariff__plan-discount">
                 <div class="tariff__plan-discount-percent">-42%</div>
-                <span class="tariff__plan-discount-text">Успей до 23 июля<br />
-                  <span class="tariff__plan-discount-sub-text">899₽ вместо <span>1548₽</span> в год</span>
+                <span class="tariff__plan-discount-text">Успей до&nbsp;23&nbsp;июля<br />
+                  <span class="tariff__plan-discount-sub-text">899₽ вместо <span>1548₽</span> в&nbsp;год</span>
                 </span>
               </div>
-              <a href="#" class="tariff__plan-link">Хочу быть в Плюсе</a>
+              <a href="#" class="tariff__plan-link">Хочу быть в&nbsp;Плюсе</a>
             </div>
           </li>
           <li class="tariff__item">
@@ -876,95 +1236,95 @@
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Все преимущества прошлых тарифов </span><br /><span
+                  <span class="tariff__plan-item-text">Все преимущества прошлых тарифов </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--business">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Корпоративные функции </span><br /><span
+                  <span class="tariff__plan-item-text">Корпоративные функции </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--business">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Дополнительная лицензия администратора на корпоративный
-                    кабинет </span><br /><span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                  <span class="tariff__plan-item-text">Дополнительная лицензия администратора на&nbsp;корпоративный
+                    кабинет </span> <br /><span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--business">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Авторский дизайн из каталога </span><br /><span
+                  <span class="tariff__plan-item-text">Авторский дизайн из&nbsp;каталога </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--business">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Персональный менеджер </span><br /><span
+                  <span class="tariff__plan-item-text">Персональный менеджер </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--business">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Приоритетный доступ к новым функциям и бета-версиям
-                    продуктов </span><br /><span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                  <span class="tariff__plan-item-text">Приоритетный доступ к&nbsp;новым функциям и&nbsp;бета-версиям
+                    продуктов </span> <br /><span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--business">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Возможность кастомизации и брендинг </span><br /><span
+                  <span class="tariff__plan-item-text">Возможность кастомизации и&nbsp;брендинг </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--business">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Корпоративные скидки на дополнительные услуги </span><br /><span
-                    class="tariff__plan-item-sub">Отключение всех уведомлений</span>
+                  <span class="tariff__plan-item-text">Корпоративные скидки на&nbsp;дополнительные услуги </span>
+                  <br /><span class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--business">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Без рекламы </span><br /><span
+                  <span class="tariff__plan-item-text">Без рекламы </span> <br /><span
                     class="tariff__plan-item-sub">Визитки без встроенной рекламы.</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--business">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                  <span class="tariff__plan-item-text">Данные и&nbsp;хранилище </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
                 <li class="tariff__plan-item tariff__plan-item--business">
                   <svg class="tariff__plan-item-icon" width="12" height="9" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-check"></use>
                   </svg>
-                  <span class="tariff__plan-item-text">Данные и хранилище </span><br /><span
+                  <span class="tariff__plan-item-text">Данные и&nbsp;хранилище </span> <br /><span
                     class="tariff__plan-item-sub">Отключение всех уведомлений</span>
                 </li>
               </ul>
               <p class="tariff__plan-price">11 999₽</p>
               <p class="tariff__plan-price-text">
-                За штат до 50 сотрудников + за каждого сотрудника 699₽
+                За&nbsp;штат до&nbsp;50&nbsp;сотрудников + за&nbsp;каждого сотрудника 699₽
               </p>
               <p class="tariff__plan-price">59 999₽</p>
               <p class="tariff__plan-price-text">
-                За штат свыше 50 сотрудников + за каждого сотрудника 899₽
+                За&nbsp;штат свыше 50&nbsp;сотрудников + за&nbsp;каждого сотрудника 899₽
               </p>
               <div class="tariff__plan-discount">
                 <div class="tariff__plan-discount-percent">-35%</div>
-                <span class="tariff__plan-discount-text">Успей до 15 июля<br />
-                  <span class="tariff__plan-discount-sub-text">Вместо <span>15555₽</span> в месяц</span>
+                <span class="tariff__plan-discount-text">Успей до&nbsp;15&nbsp;июля<br />
+                  <span class="tariff__plan-discount-sub-text">Вместо <span>15555₽</span> в&nbsp;месяц</span>
                 </span>
               </div>
-              <a href="#" class="tariff__plan-link">Хочу быть в Бизнесе</a>
+              <a href="#" class="tariff__plan-link">Хочу быть в&nbsp;Бизнесе</a>
             </div>
           </li>
         </ul>
@@ -975,17 +1335,17 @@
         <div class="question-app__block">
           <div class="question-app__block-container">
             <p class="question-app__block-title">
-              Вы еще не пользуетесь мобильным приложением?
+              Вы&nbsp;еще не&nbsp;пользуетесь мобильным приложением?
             </p>
             <p class="question-app__block-description">
-              Приобретайте подписку Плюс и улучшайте свою визитку еще лучше
+              Приобретайте подписку Плюс и&nbsp;улучшайте свою визитку еще лучше
             </p>
             <a href="#" class="question-app__block-link">Скачать</a>
           </div>
           <picture>
             <source media="(max-width: 639px)" srcset="images/question-app/question-app-mobile.png" />
             <source media="(max-width: 1023px)" srcset="images/question-app/question-app-tablet.png" />
-            <img class="question-app__image" src="images/question-app/question-app.png" 
+            <img class="question-app__image" src="images/question-app/question-app.png"
               alt="визитка с забавной картинкой" />
           </picture>
         </div>
@@ -997,7 +1357,7 @@
           Почему стоит использовать приложение?
         </h2>
         <p class="application__subtitle">
-          Приобретайте подписку Плюс и улучшайте свою визитку еще лучше
+          Приобретайте подписку Плюс и&nbsp;улучшайте свою визитку еще лучше
         </p>
 
         <ul class="application__list">
@@ -1005,7 +1365,7 @@
             <div class="application__item-text-content">
               <h3 class="application__item-title">Просто работать</h3>
               <p class="application__item-description">
-                Создавайте, кастомизируйте и делитесь визитками в удобном виде
+                Создавайте, кастомизируйте и&nbsp;делитесь визитками в&nbsp;удобном виде
               </p>
             </div>
             <div class="application__item-image-container">
@@ -1021,7 +1381,7 @@
             <div class="application__item-text-content">
               <h3 class="application__item-title">Удобная статистика</h3>
               <p class="application__item-description">
-                Огромные данные собраны в мобильном приложении
+                Огромные данные собраны в&nbsp;мобильном приложении
               </p>
             </div>
             <div class="application__item-image-container">
@@ -1051,9 +1411,9 @@
 
           <li class="application__item">
             <div class="application__item-text-content">
-              <h3 class="application__item-title">Меняйте данные на ходу</h3>
+              <h3 class="application__item-title">Меняйте данные на&nbsp;ходу</h3>
               <p class="application__item-description">
-                Надоела обложка - поменяйте ей дизайн простыми действиями
+                Надоела обложка&nbsp;&mdash; поменяйте ей&nbsp;дизайн простыми действиями
               </p>
             </div>
             <div class="application__item-image-container">
@@ -1092,9 +1452,9 @@
           <picture>
             <source media="(max-width: 639px)" srcset="images/application/application5-mobile.png" />
             <source media="(max-width: 1023px)" srcset="images/application/application5-tablet.png" />
-          <img class="application__download-image" src="images/application/application5.png"
-            alt="пирложение на телефоне" />
-            </picture>
+            <img class="application__download-image" src="images/application/application5.png"
+              alt="пирложение на телефоне" />
+          </picture>
         </div>
       </div>
     </section>
@@ -1103,10 +1463,10 @@
         <div class="business__block">
           <div class="business__block-container">
             <p class="business__block-title">
-              Развивайте бизнес вместе с нами
+              Развивайте бизнес вместе с&nbsp;нами
             </p>
             <p class="business__block-description">
-              Приобретайте подписку Плюс и улучшайте свою визитку еще лучше
+              Приобретайте подписку Плюс и&nbsp;улучшайте свою визитку еще лучше
             </p>
             <button class="business__block-link">Подробнее</button>
           </div>
@@ -1115,32 +1475,32 @@
 
         <ul class="business__list">
           <li class="business__item">
-            <img class="business__item-image" src="images/business/navigate.png" alt="Неограниченные возможности"/>
+            <img class="business__item-image" src="images/business/navigate.png" alt="Неограниченные возможности" />
             <h3 class="business__item-title">Неограниченные возможности</h3>
             <p class="business__item-description">
-              Создавайте и управляйте неограниченным количеством электронных
-              визиток с доступом ко всем шаблонам и функциям
+              Создавайте и&nbsp;управляйте неограниченным количеством электронных
+              визиток с&nbsp;доступом ко&nbsp;всем шаблонам и&nbsp;функциям
             </p>
           </li>
           <li class="business__item">
             <img class="business__item-image" src="images/business/basket.png" alt="Полная интеграция и аналитика" />
             <h3 class="business__item-title">
-              Полная интеграция и аналитика
+              Полная интеграция и&nbsp;аналитика
             </h3>
             <p class="business__item-description">
-              Интеграция с CRM-системами, продвинутые функции для анализа
-              данных и генерация отчетов для повышения эффективности
+              Интеграция с&nbsp;CRM-системами, продвинутые функции для анализа
+              данных и&nbsp;генерация отчетов для повышения эффективности
               бизнес-процессов
             </p>
           </li>
           <li class="business__item">
-            <img class="business__item-image" src="images/business/sapphire.png" alt="Персонализированная поддержка"/>
+            <img class="business__item-image" src="images/business/sapphire.png" alt="Персонализированная поддержка" />
             <h3 class="business__item-title">
               Персонализированная поддержка
             </h3>
             <p class="business__item-description">
-              Персональная поддержка и консультации, обучение сотрудников и
-              приоритетный доступ к новым функциям и обновлениям
+              Персональная поддержка и&nbsp;консультации, обучение сотрудников и
+              приоритетный доступ к&nbsp;новым функциям и&nbsp;обновлениям
             </p>
           </li>
         </ul>
@@ -1152,11 +1512,11 @@
         <div class="consultation__block">
           <div class="consultation__block-text">
             <p class="consultation__block-title">
-              Запишитесь на бесплатную консультацию с менеджером
+              Запишитесь на&nbsp;бесплатную консультацию с&nbsp;менеджером
             </p>
             <p class="consultation__block-description">
-              Выбирайте дизайн из большой библиотеки или создавайте
-              самиПриобретайте подписку Плюс и улучшайте свою визитку еще
+              Выбирайте дизайн из&nbsp;большой библиотеки или создавайте
+              самиПриобретайте подписку Плюс и&nbsp;улучшайте свою визитку еще
               лучше
             </p>
           </div>
@@ -1177,8 +1537,8 @@
               Получить консультацию
             </button>
             <p class="consultation__block-form-politic">
-              Отправляя заявку, вы даете согласие на обработку своих
-              персональных данных в соответствии с положением о
+              Отправляя заявку, вы&nbsp;даете согласие на&nbsp;обработку своих
+              персональных данных в&nbsp;соответствии с&nbsp;положением о
               конфиденциальности
             </p>
           </form>
@@ -1189,30 +1549,28 @@
       <div class="container">
         <h2 class="faq__title">Остались вопросы?</h2>
         <p class="faq__description">
-          Здесь мы собрали несколько популярных вопросов и ответы на них
+          Здесь мы&nbsp;собрали несколько популярных вопросов и&nbsp;ответы на&nbsp;них
         </p>
         <ul class="faq__list">
           <li class="faq__item">
             <div class="faq__item-question">
-              <span class="faq__item-question-text" aria-expanded="false">Что такое UniTap Бизнес?</span>
+              <span class="faq__item-question-text" aria-expanded="false">Что такое UniTap?</span>
               <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-arrow"></use>
               </svg>
             </div>
             <div class="faq__item-answer" aria-hidden="true">
               <p class="faq__item-answer-text">
-                Здесь мы собрали несколько популярных вопросов и ответы на
-                них. NFC визитки для ваших задач. Лучшее цифровое решение для
-                вас и вашего бизнесаЗдесь мы собрали несколько популярных
-                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
-                цифровое решение для вас и вашего бизнеса.
+                UniTap&nbsp;&mdash; это сервис для создания цифровых визиток с&nbsp;поддержкой QR-кодов и
+                NFC-меток. Это современная альтернатива бумажным визиткам: удобнее, быстрее и
+                экологичнее.
               </p>
             </div>
           </li>
           <li class="faq__item">
             <div class="faq__item-question">
               <p class="faq__item-question-text">
-                Как начать пользоваться UniTap для бизнеса?
+                Как работает визитка UniTap?
               </p>
               <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-arrow"></use>
@@ -1220,18 +1578,19 @@
             </div>
             <div class="faq__item-answer" aria-hidden="true">
               <p class="faq__item-answer-text">
-                Здесь мы собрали несколько популярных вопросов и ответы на
-                них. NFC визитки для ваших задач. Лучшее цифровое решение для
-                вас и вашего бизнесаЗдесь мы собрали несколько популярных
-                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
-                цифровое решение для вас и вашего бизнеса.
+                Вы&nbsp;создаёте свою цифровую визитку на&nbsp;платформе. Затем получаете QR-код или
+                NFC-метку, при сканировании которых пользователи моментально переходят на&nbsp;вашу
+                визитку&nbsp;&mdash; без установки приложений.
+
               </p>
             </div>
           </li>
           <li class="faq__item">
             <div class="faq__item-question">
               <p class="faq__item-question-text">
-                Сколько стоит годовая подписка на UniTap Плюс?
+                Какие смартфоны поддерживают NFC и&nbsp;что делать, если у&nbsp;меня
+                его нет?
+
               </p>
               <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-arrow"></use>
@@ -1239,18 +1598,20 @@
             </div>
             <div class="faq__item-answer" aria-hidden="true">
               <p class="faq__item-answer-text">
-                Здесь мы собрали несколько популярных вопросов и ответы на
-                них. NFC визитки для ваших задач. Лучшее цифровое решение для
-                вас и вашего бизнесаЗдесь мы собрали несколько популярных
-                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
-                цифровое решение для вас и вашего бизнеса.
+                Большинство современных смартфонов поддерживают технологию NFC&nbsp;&mdash; она
+                встроена во&nbsp;все устройства Apple (iPhone 7&nbsp;и&nbsp;новее), а&nbsp;также в&nbsp;большинство
+                смартфонов на&nbsp;Android (Samsung, Xiaomi, Huawei, Realme и&nbsp;др.).
+                Если ваш смартфон не&nbsp;поддерживает NFC, вы&nbsp;всё равно можете пользоваться UniTap
+                &mdash;&nbsp;просто используйте QR-код для обмена контактами. Он&nbsp;работает на&nbsp;любом
+                телефоне с&nbsp;камерой и&nbsp;интернетом.
+
               </p>
             </div>
           </li>
           <li class="faq__item">
             <div class="faq__item-question">
               <p class="faq__item-question-text">
-                Как оплачивать UniTap для бизнеса?
+                Можно&nbsp;ли заказать собственный дизайн визитки?
               </p>
               <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-arrow"></use>
@@ -1258,18 +1619,16 @@
             </div>
             <div class="faq__item-answer" aria-hidden="true">
               <p class="faq__item-answer-text">
-                Здесь мы собрали несколько популярных вопросов и ответы на
-                них. NFC визитки для ваших задач. Лучшее цифровое решение для
-                вас и вашего бизнесаЗдесь мы собрали несколько популярных
-                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
-                цифровое решение для вас и вашего бизнеса.
+                Да, вы&nbsp;можете заказать индивидуальный дизайн визитки под ваш бренд или стиль.
+                Просто оставьте заявку, и&nbsp;с&nbsp;вами свяжется наш менеджер, чтобы обсудить все детали
+                и&nbsp;предложения.
               </p>
             </div>
           </li>
           <li class="faq__item">
             <div class="faq__item-question">
               <p class="faq__item-question-text">
-                Как переехать в UniTap с другой платформы?
+                Какую информацию видит человек, отсканировавший визитку?
               </p>
               <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-arrow"></use>
@@ -1277,18 +1636,15 @@
             </div>
             <div class="faq__item-answer" aria-hidden="true">
               <p class="faq__item-answer-text">
-                Здесь мы собрали несколько популярных вопросов и ответы на
-                них. NFC визитки для ваших задач. Лучшее цифровое решение для
-                вас и вашего бизнесаЗдесь мы собрали несколько популярных
-                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
-                цифровое решение для вас и вашего бизнеса.
+                Он&nbsp;видит вашу персональную страницу с&nbsp;информацией, ссылками и&nbsp;кнопками для
+                связи. Данные можно обновлять в&nbsp;любое время&nbsp;&mdash; визитка всегда будет актуальна
               </p>
             </div>
           </li>
           <li class="faq__item">
             <div class="faq__item-question">
               <p class="faq__item-question-text">
-                Как подключить UniTap для бизнеса через партнёра?
+                Нужно&nbsp;ли устанавливать приложение, чтобы посмотреть визитку?
               </p>
               <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#icon-arrow"></use>
@@ -1296,17 +1652,34 @@
             </div>
             <div class="faq__item-answer" aria-hidden="true">
               <p class="faq__item-answer-text">
-                Здесь мы собрали несколько популярных вопросов и ответы на
-                них. NFC визитки для ваших задач. Лучшее цифровое решение для
-                вас и вашего бизнесаЗдесь мы собрали несколько популярных
-                вопросов и ответы на них. NFC визитки для ваших задач. Лучшее
-                цифровое решение для вас и вашего бизнеса.
+                Нет. Визитка открывается в&nbsp;обычном браузере&nbsp;&mdash; достаточно отсканировать QR-код
+                или поднести телефон к&nbsp;NFC-метке.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <div class="faq__item-question">
+              <p class="faq__item-question-text">
+                Можно&nbsp;ли использовать UniTap для сотрудников, мероприятий и&nbsp;госструктур?
+              </p>
+              <svg class="faq__item-question-icon" width="16" height="9" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="faq__item-answer" aria-hidden="true">
+              <p class="faq__item-answer-text">
+                Да! Мы&nbsp;уже сотрудничаем с&nbsp;организациями и&nbsp;проводим интеграции: <br>
+                ● Визитки для форумов и&nbsp;мероприятий <br>
+                ● Студенческие и&nbsp;корпоративные ID <br>
+                ● Медицинские и&nbsp;экстренные карточки <br>
+                ● Упрощение обмена контактами в&nbsp;госучреждениях
               </p>
             </div>
           </li>
         </ul>
       </div>
     </section>
+
   </main>
   <footer class="footer">
     <div class="container">
@@ -1336,7 +1709,7 @@
             </ul>
           </div>
           <div class="footer__social-links">
-            <p class="footer__social-title">Подписывайтесь на наши каналы</p>
+            <p class="footer__social-title">Подписывайтесь на&nbsp;наши каналы</p>
             <ul class="footer__social-list">
               <li class="footer__social-item">
                 <a href="https://t.me/unitap843" class="footer__social-link">
@@ -1354,7 +1727,7 @@
                   <span class="footer__social-text">ВКонтакте</span>
                 </a>
               </li>
-<!--               <li class="footer__social-item">
+              <!-- <li class="footer__social-item">
                 <a href="#" class="footer__social-link">
                   <svg class="footer__social-icon" width="20" height="20" aria-hidden="true">
                     <use xlink:href="images/sprite.svg#icon-dzen"></use>
@@ -1371,7 +1744,7 @@
             <h4 class="footer__column-title">Поддержка</h4>
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Вопросы и ответы</a>
+                <a href="#" class="footer__nav-link">Вопросы и&nbsp;ответы</a>
               </li>
               <li class="footer__nav-item">
                 <a href="#" class="footer__nav-link">Правила сайта</a>
@@ -1380,7 +1753,7 @@
                 <a href="#" class="footer__nav-link">Справка</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Активация по коду</a>
+                <a href="#" class="footer__nav-link">Активация по&nbsp;коду</a>
               </li>
             </ul>
           </div>
@@ -1389,7 +1762,7 @@
             <h4 class="footer__column-title">Приобретение</h4>
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Доставка и оплата</a>
+                <a href="#" class="footer__nav-link">Доставка и&nbsp;оплата</a>
               </li>
               <li class="footer__nav-item">
                 <a href="#" class="footer__nav-link">Где купить</a>
@@ -1416,7 +1789,7 @@
             <h4 class="footer__column-title">Поддержка</h4>
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Вопросы и ответы</a>
+                <a href="#" class="footer__nav-link">Вопросы и&nbsp;ответы</a>
               </li>
               <li class="footer__nav-item">
                 <a href="#" class="footer__nav-link">Правила сайта</a>
@@ -1425,7 +1798,7 @@
                 <a href="#" class="footer__nav-link">Справка</a>
               </li>
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Активация по коду</a>
+                <a href="#" class="footer__nav-link">Активация по&nbsp;коду</a>
               </li>
             </ul>
           </div>
@@ -1434,7 +1807,7 @@
             <h4 class="footer__column-title">Приобретение</h4>
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Доставка и оплата</a>
+                <a href="#" class="footer__nav-link">Доставка и&nbsp;оплата</a>
               </li>
               <li class="footer__nav-item">
                 <a href="#" class="footer__nav-link">Где купить</a>
@@ -1451,14 +1824,14 @@
         <div class="footer__contact-info">
           <a class="footer__phone" href="tel:+7(999)999-99-99">8 (999) 999-99-99</a>
           <p class="footer__address">
-            г. Казань, ул. Пушкина, д. Колотушкина, этаж 1, ком. Б2, офис 6,
+            г. Казань, ул. Пушкина, д. Колотушкина, этаж&nbsp;1, ком. Б2, офис 6,
             ИНН 9999999999, КПП 999999999, ОГРН 999999999, 0+
           </p>
         </div>
         <div class="footer__company-info">
           <p class="footer__company-info-text">
-            UniTap - инновационная платформа г. Казань, ул. Пушкина, д.
-            Колотушкина, этаж 1, ком. Б2, офис 6, ИНН 9999999999, КПП
+            UniTap&nbsp;&mdash; инновационная платформа&nbsp;г. Казань, ул. Пушкина, д.
+            Колотушкина, этаж&nbsp;1, ком. Б2, офис 6, ИНН 9999999999, КПП
             999999999, ОГРН 999999999, 0+
           </p>
         </div>
@@ -1467,7 +1840,7 @@
       <div class="footer__bottom">
         <a href="#" class="footer__feedback">Обратная связь</a>
         <a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
-        <p class="footer__copyright">© 2023–2024, UniTap</p>
+        <p class="footer__copyright">&copy;&nbsp;2023&ndash;2024, UniTap</p>
       </div>
     </div>
   </footer>
