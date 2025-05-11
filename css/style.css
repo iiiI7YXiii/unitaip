@@ -3094,24 +3094,16 @@ fieldset {
 }
 .footer__middle {
   display: flex;
-  gap: 36px;
+  flex-direction: column;
+  gap: 10px;
   padding: 25px 0;
   border-bottom: 1px solid rgba(19, 19, 20, 0.1);
-  align-items: center;
 }
 @media (max-width: 1023px) {
   .footer__middle {
     flex-direction: column;
     padding: 20px 0;
     gap: 15px;
-  }
-}
-.footer__contact-info {
-  width: calc(50% - 16px);
-}
-@media (max-width: 1023px) {
-  .footer__contact-info {
-    width: 100%;
   }
 }
 .footer__phone {
@@ -3124,14 +3116,6 @@ fieldset {
   line-height: 20px;
   color: rgba(19, 19, 20, 0.4);
   margin: 0;
-}
-.footer__company-info {
-  width: calc(50% - 16px);
-}
-@media (max-width: 1023px) {
-  .footer__company-info {
-    width: 100%;
-  }
 }
 .footer__company-info-text {
   line-height: 20px;
