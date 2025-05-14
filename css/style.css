@@ -732,7 +732,7 @@ input[type=search]::-webkit-search-results-decoration {
   border-radius: 50%;
   outline: 2px solid rgba(19, 19, 20, 0.1);
   padding: 0;
-  background: url("../../images/user/photo.jpg") no-repeat center;
+  background: url("../images/user/photo.jpg") no-repeat center;
 }
 .user--business {
   outline: 2px solid #414A56;
@@ -1659,7 +1659,7 @@ input[type=search]::-webkit-search-results-decoration {
 .create__preview-card {
   display: flex;
   flex-direction: column;
-  background: url("../../images/create/card-bg.jpg ") no-repeat center;
+  background: url("../images/create/card-bg.jpg ") no-repeat center;
   background-size: cover;
   border-radius: 17px;
   min-height: 214px;
@@ -3242,7 +3242,7 @@ input[type=search]::-webkit-search-results-decoration {
   width: 28px;
   height: 28px;
   border-radius: 10px;
-  background: url("../../images/create/card-bg.jpg ") no-repeat center;
+  background: url("../images/create/card-bg.jpg ") no-repeat center;
   background-size: cover;
   transform: translateY(-50%);
 }
@@ -3255,7 +3255,7 @@ input[type=search]::-webkit-search-results-decoration {
   }
 }
 .radio-bg:nth-child(2) .radio-bg__label::before {
-  background: url("../../images/create/abstraction-mini.jpg ") no-repeat center;
+  background: url("../images/create/abstraction-mini.jpg ") no-repeat center;
 }
 .radio-bg:nth-child(3) .radio-bg__label::before {
   background: #09AE84;
