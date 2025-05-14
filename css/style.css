@@ -412,6 +412,13 @@ fieldset {
   margin: 0;
 }
 
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
 .container {
   width: 100%;
   max-width: 1920px;
@@ -467,20 +474,32 @@ fieldset {
 .header__content {
   align-items: center;
   display: flex;
-  gap: 20px;
+  gap: 25px;
   justify-content: space-between;
+}
+.header__logo-link {
+  display: flex;
+}
+.header__main-nav {
+  transition: transform 0.3s;
+  transform-origin: left;
 }
 .header__right {
   align-items: center;
   display: flex;
   gap: 15px;
+  flex-grow: 0;
 }
-.header__burger-btn {
+.header__burger {
   display: none;
 }
 @media (max-width: 1023px) {
-  .header__burger-btn {
+  .header__burger {
     display: flex;
+  }
+}
+@media (max-width: 1023px) {
+  .header__burger-btn {
     padding: 9px;
   }
 }
@@ -543,43 +562,76 @@ fieldset {
 }
 .header__search {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: auto;
+  min-width: 40px;
+  min-height: 50px;
 }
 .header__search-field {
   border-radius: 15px;
-  border: none;
+  border: 1px solid rgba(19, 19, 20, 0.1);
   outline: none;
   background-color: rgba(19, 19, 20, 0.04);
-  padding: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 0;
-  transform: translateY(-50%);
+  padding: 15px 40px;
+  width: 100%;
   z-index: 20;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s;
 }
 .header__search-icon {
   position: absolute;
-  right: 0;
-  top: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 40px;
   height: 40px;
   padding: 11px;
   cursor: pointer;
   z-index: 30;
 }
-.header__search--open .header__search-field {
-  width: 940px;
-  padding: 15px 44px;
-  border: 1px solid rgba(19, 19, 20, 0.1);
-  transform: translateY(-5px);
+.header__search-icon-close {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
 }
-.header__search--open .header__search-icon {
-  transform: translate(-900px, 0);
+.header__search-variants {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  display: none;
+  padding: 9px 5px 9px 15px;
+  background-color: #ffffff;
+  border: 1px solid rgba(19, 19, 20, 0.1);
+  border-radius: 25px;
+  box-shadow: 0px 37px 50px -21px rgba(19, 19, 20, 0.15);
+  width: 100%;
+  min-height: 75px;
+  max-height: 400px;
+  gap: 7px;
+  transform: translateY(100%);
+  overflow: hidden;
+}
+.header__search-variants-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  width: 100%;
+}
+.header__search-variants-wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+.header__search-variants-wrapper::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 12px;
+  background-color: rgba(19, 19, 20, 0.1);
 }
 .header__lang {
   position: relative;
+  display: flex;
+  min-width: 38px;
 }
 .header__lang-icon {
   transition: transform 0.3s;
@@ -680,7 +732,7 @@ fieldset {
   border-radius: 50%;
   outline: 2px solid rgba(19, 19, 20, 0.1);
   padding: 0;
-  background: url("../images/user/photo.jpg") no-repeat center;
+  background: url("../../images/user/photo.jpg") no-repeat center;
 }
 .user--business {
   outline: 2px solid #414A56;
@@ -1607,7 +1659,7 @@ fieldset {
 .create__preview-card {
   display: flex;
   flex-direction: column;
-  background: url("../images/create/card-bg.jpg ") no-repeat center;
+  background: url("../../images/create/card-bg.jpg ") no-repeat center;
   background-size: cover;
   border-radius: 17px;
   min-height: 214px;
@@ -1729,6 +1781,7 @@ fieldset {
   max-width: 57px;
   min-height: 57px;
   max-height: 57px;
+  cursor: pointer;
 }
 @media (max-width: 639px) {
   .create__item {
@@ -3189,7 +3242,7 @@ fieldset {
   width: 28px;
   height: 28px;
   border-radius: 10px;
-  background: url("../images/create/card-bg.jpg ") no-repeat center;
+  background: url("../../images/create/card-bg.jpg ") no-repeat center;
   background-size: cover;
   transform: translateY(-50%);
 }
@@ -3202,7 +3255,7 @@ fieldset {
   }
 }
 .radio-bg:nth-child(2) .radio-bg__label::before {
-  background: url("../images/create/abstraction-mini.jpg ") no-repeat center;
+  background: url("../../images/create/abstraction-mini.jpg ") no-repeat center;
 }
 .radio-bg:nth-child(3) .radio-bg__label::before {
   background: #09AE84;
