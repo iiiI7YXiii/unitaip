@@ -64,16 +64,33 @@ burgerBtn.addEventListener("click", () => {
 });
 
 const searchBtn = document.querySelector(".header__search-icon");
-const searchEl = document.querySelector(".header__search");
+const searchEl = document.querySelector(".header__search-field");
+const navEl = document.querySelector(".header__main-nav")
+const headerRight = document.querySelector(".header__right")
+const burgerEl = document.querySelector(".header__burger")
+const searchCloseBtn = document.querySelector(".header__search-icon-close");
 
 searchBtn.addEventListener("click", () => {
-  searchEl.classList.toggle("header__search--open");
+  searchEl.classList.remove("visually-hidden");
+  navEl.classList.add("visually-hidden");
+  burgerEl.classList.add("visually-hidden");
+  searchCloseBtn.style.display = 'block'
 
-  if (searchEl.classList.contains("header__search--open")) {
-    document.querySelector(".header__main-nav").style.transform = "scale(0)";
-  } else {
-    document.querySelector(".header__main-nav").style.transform = "scale(1)";
-  }
+    searchEl.style.transform = `scaleX(1)`
+    navEl.style.transform = "scale(0)";
+    headerRight.style.flexGrow = '1'
+});
+
+searchCloseBtn.addEventListener("click", () => {
+  searchEl.classList.add("visually-hidden");
+  navEl.classList.remove("visually-hidden");
+  burgerEl.classList.remove("visually-hidden");
+  searchCloseBtn.style.display = 'none'
+
+    searchEl.style.transform = `scaleX(0)`
+    navEl.style.transform = "scale(1)";
+    headerRight.style.flexGrow = '0'
+
 });
 
 const arrowLeft = document.querySelector("#arrow-left");
@@ -94,11 +111,6 @@ const manageArrow = () => {
   }
 
   let maxScrollValue = createList.scrollWidth - createList.clientWidth;
-
-  console.log(createList.scrollWidth);
-  console.log(createList.clientWidth);
-  console.log(createList.scrollLeft);
-  console.log(maxScrollValue);
 
   if (createList.scrollLeft >= maxScrollValue) {
     arrowRight.classList.remove("active");
@@ -191,4 +203,36 @@ choiceBg.addEventListener("click", () => {
       }
     });
   }, 100);
+});
+
+const previewCard = document.querySelector(".create__preview-card");
+
+createList.addEventListener("click", (event) => {
+
+  if (event.target.classList.contains("create__item-image")) {
+       const srcEl = event.target.getAttribute('src');
+
+  previewCard.style.background = `url('../${srcEl} ') no-repeat center`
+  previewCard.style.backgroundSize = 'cover'
+  }
+
+});
+
+const cardTitle = document.querySelector(".create__preview-card-title");
+const cardDescription = document.querySelector(".create__preview-card-description");
+const inputName = document.querySelector("#name");
+const inputDescription = document.querySelector("#description");
+
+inputName.addEventListener("input", () => {
+   cardTitle.textContent = inputName.value
+   if (!inputName.value) {
+    cardTitle.textContent = 'Как к вам обращаться'
+   }
+});
+
+inputDescription.addEventListener("input", () => {
+   cardDescription.textContent = inputDescription.value
+   if (!inputDescription.value) {
+    cardDescription.textContent = 'Небольшое описание'
+   }
 });
