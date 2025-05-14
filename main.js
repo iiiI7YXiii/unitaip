@@ -212,7 +212,7 @@ createList.addEventListener("click", (event) => {
   if (event.target.classList.contains("create__item-image")) {
        const srcEl = event.target.getAttribute('src');
 
-  previewCard.style.background = `url('../${srcEl} ') no-repeat center`
+  previewCard.style.background = `url('${srcEl} ') no-repeat center`
   previewCard.style.backgroundSize = 'cover'
   }
 
