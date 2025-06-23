@@ -1784,7 +1784,7 @@ input[type=search]::-webkit-search-results-decoration {
   justify-content: center;
   align-items: center;
   background: radial-gradient(circle, #c7c7c7 0%, #ededed 100%);
-  z-index: 100;
+  z-index: 1;
   transform: translateY(-50%) rotate(90deg);
   color: #131314;
 }
