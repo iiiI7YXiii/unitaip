@@ -1338,7 +1338,7 @@ input[type=search]::-webkit-search-results-decoration {
   }
 }
 .technologies__item-title {
-  margin: 0;
+  margin: auto 0 0 0;
 }
 .technologies__item-description {
   margin: 0;
